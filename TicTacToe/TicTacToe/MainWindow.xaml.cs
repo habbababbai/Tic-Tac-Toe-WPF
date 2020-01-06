@@ -22,10 +22,12 @@ namespace TicTacToe
     public partial class MainWindow : Window
     {
         Game newGame;
+        
         public MainWindow()
         {
             InitializeComponent();
             newGame = new Game();
+            DataContext = newGame;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -38,6 +40,11 @@ namespace TicTacToe
                 button.Content = "X";
             if (newGame.gameBoard.arr[row, column] == CellState.O)
                 button.Content = "O";
+            if (newGame.isOver)
+            {
+                string s = "Wygrana";
+                txtbox.Text = s;
+            }
         }
     }
 }
