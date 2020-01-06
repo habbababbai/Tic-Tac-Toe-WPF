@@ -1,0 +1,5 @@
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csprojAssemblyReference.cache
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
