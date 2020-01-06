@@ -15,20 +15,28 @@ namespace TicTacToeLibrary
             gameBoard = new Board();
             player1Turn = true;
         }
-        public void SetBlock(int index)
+        public void SetBlock(int x, int y)
         {
-            if (gameBoard.arr[index] == CellState.Empty)
+            if (gameBoard.arr[x,y] == CellState.Empty)
             {
                 if (player1Turn == true)
                 {
-                    gameBoard.arr[index] = CellState.X;
+                    gameBoard.arr[x,y] = CellState.X;
                 }
                 else
                 {
-                    gameBoard.arr[index] = CellState.O;
+                    gameBoard.arr[x,y] = CellState.O;
                 }
                 player1Turn = !player1Turn;
             }
+        }
+        public void CheckForLine()
+        {
+
+        }
+        public void CheckVertical()
+        {
+            for (int i = 0; i < 5; i += 5) ;
         }
     }
 }

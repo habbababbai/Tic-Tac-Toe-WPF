@@ -14,12 +14,15 @@ namespace TicTacToeLibrary
     }
     public class Board
     {
-        public CellState[] arr = new CellState[25];
+        public CellState[,] arr = new CellState[5,5];
         public Board()
         {
-            for (int i=0; i < arr.Length; i++)
+            for (int i=0; i < arr.GetLength(0); i++)
             {
-                arr[i] = CellState.Empty;
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    arr[i, j] = CellState.Empty;
+                }
             }
         }
     }

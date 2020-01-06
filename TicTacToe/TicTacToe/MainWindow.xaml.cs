@@ -33,10 +33,10 @@ namespace TicTacToe
             var column = Grid.GetColumn(button);
             var row = Grid.GetRow(button);
             var index = column + (row * 5);
-            newGame.SetBlock(index);
-            if (newGame.gameBoard.arr[index] == CellState.X)
+            newGame.SetBlock(row, column);
+            if (newGame.gameBoard.arr[row, column] == CellState.X)
                 button.Content = "X";
-            if (newGame.gameBoard.arr[index] == CellState.O)
+            if (newGame.gameBoard.arr[row, column] == CellState.O)
                 button.Content = "O";
         }
     }
