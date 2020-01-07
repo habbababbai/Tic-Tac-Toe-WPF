@@ -39,7 +39,7 @@ namespace TicTacToeLibrary
         }
         public bool CheckForLine()
         {
-            if (CheckHorizontal() || CheckVertical())
+            if (CheckHorizontal() || CheckVertical() || CheckDiagonal())
                 return true;
             return false;
         }
@@ -69,11 +69,24 @@ namespace TicTacToeLibrary
             }
             return false;
         }
+        public bool CheckDiagonal()
+        {
+            if (gameBoard.arr[2,2] != CellState.Empty &&
+                (gameBoard.arr[0, 0] == gameBoard.arr[1, 1] &&
+                gameBoard.arr[1, 1] == gameBoard.arr[2, 2] &&
+                gameBoard.arr[2, 2] == gameBoard.arr[3, 3] &&
+                gameBoard.arr[3, 3] == gameBoard.arr[4, 4]) ||
+                (gameBoard.arr[0, 4] == gameBoard.arr[1, 3] &&
+                gameBoard.arr[1, 3] == gameBoard.arr[2, 2] &&
+                gameBoard.arr[2, 2] == gameBoard.arr[3, 1]) &&
+                gameBoard.arr[3, 1] == gameBoard.arr[4, 0] &&
+                gameBoard.arr[2, 2] != CellState.Empty)
+                return true;
+            return false;
+        }
         public void EndGame()
         {
             isOver = true;
-            gameBoard = new Board();
-            player1Turn = true;
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
