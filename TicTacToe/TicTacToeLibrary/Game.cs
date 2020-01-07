@@ -76,6 +76,7 @@ namespace TicTacToeLibrary
                 gameBoard.arr[1, 1] == gameBoard.arr[2, 2] &&
                 gameBoard.arr[2, 2] == gameBoard.arr[3, 3] &&
                 gameBoard.arr[3, 3] == gameBoard.arr[4, 4]) ||
+
                 (gameBoard.arr[0, 4] == gameBoard.arr[1, 3] &&
                 gameBoard.arr[1, 3] == gameBoard.arr[2, 2] &&
                 gameBoard.arr[2, 2] == gameBoard.arr[3, 1]) &&

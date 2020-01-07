@@ -41,8 +41,17 @@ namespace TicTacToe
                 button.Content = "O";
             if (newGame.isOver)
             {
-                string s = "Wygrana";
+                string s;               
+                if (!newGame.player1Turn)
+                {
+                    s = "Wygrał pierwszy gracz";                   
+                }
+                else
+                {
+                    s = "Wygrał drugi gracz";
+                }
                 txtbox.Text = s;
+
             }
         }
     }
