@@ -5,12 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="450" Width="800">
+        Title="MenuWindow" Height="450" Width="800"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
 
     <Grid Background="AliceBlue"  >
 
         <Button Name="btn1" Content="1 VS 1" HorizontalAlignment="Left" Margin="79,210,0,0"  VerticalAlignment="Top" Width="148" Height="50" Click="Button_Click" FontSize="20" FontWeight="Bold" Background="Transparent" Foreground="MediumSlateBlue" BorderBrush="MediumSlateBlue" BorderThickness="4,4,6,6"  />
         <Button Content="Exit" HorizontalAlignment="Left" Margin="79,283,0,0"  VerticalAlignment="Top" Width="148" Height="44"  FontSize="20" FontWeight="Bold" Background="Transparent" Foreground="MediumSlateBlue" BorderBrush="MediumSlateBlue" BorderThickness="4,4,6,6" Click="Button_Click_1"/>
+        <Button
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Height="50"
+            Width="50"
+    materialDesign:ButtonAssist.CornerRadius="10"
+    ToolTip="MaterialDesignRaisedButton with Round Corners">
+            <TextBlock
+      Text="10/50 Radius" />
+        </Button>
         <TextBlock HorizontalAlignment="Left" Margin="398,74,0,0"  Foreground="BlueViolet"  TextWrapping="Wrap" Text="TicTacToc" VerticalAlignment="Top" Height="72" Width="241" FontSize="50" FontWeight="Bold"/>
 
     </Grid>

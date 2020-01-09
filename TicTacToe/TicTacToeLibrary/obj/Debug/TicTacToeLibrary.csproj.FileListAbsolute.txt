@@ -9,3 +9,9 @@ D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacT
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CoreCompileInputs.cache
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.dll
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.pdb
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CopyComplete

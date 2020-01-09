@@ -22,11 +22,13 @@ namespace TicTacToe
     public partial class MainWindow : Window
     {
         Game newGame;
+        List<Button> bList;
         
         public MainWindow()
         {
             InitializeComponent();
             newGame = new Game();
+            bList = new List<Button>();
             DataContext = newGame;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -35,6 +37,7 @@ namespace TicTacToe
             var column = Grid.GetColumn(button);
             var row = Grid.GetRow(button);
             newGame.SetBlock(row, column);
+            bList.Add(button);
             if (newGame.gameBoard.arr[row, column] == CellState.X)
                 button.Content = "X";
             if (newGame.gameBoard.arr[row, column] == CellState.O)
@@ -43,15 +46,19 @@ namespace TicTacToe
             {
                 string s;               
                 if (!newGame.player1Turn)
-                {
-                    s = "Wygrał pierwszy gracz";                   
-                }
+                    s = "Wygrał pierwszy gracz";
                 else
-                {
                     s = "Wygrał drugi gracz";
-                }
                 txtbox.Text = s;
-
+                newGame.Reset();
+                ClearBoard();
+            }
+        }
+        private void ClearBoard()
+        {
+            foreach (Button b in bList)
+            {
+                b.Content = "";
             }
         }
     }

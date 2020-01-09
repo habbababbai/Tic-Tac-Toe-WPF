@@ -35,3 +35,11 @@ D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacT
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.g.cs
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.baml
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.g.cs
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.baml
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignColors.dll
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignColors.pdb
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\App.baml
