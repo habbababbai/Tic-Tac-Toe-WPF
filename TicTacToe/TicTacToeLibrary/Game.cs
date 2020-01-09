@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TicTacToeLibrary
 {
-    public class Game : INotifyPropertyChanged
+    public class Game
     {
         public bool player1Turn;
         public Board gameBoard;
@@ -89,11 +89,11 @@ namespace TicTacToeLibrary
         {
             isOver = true;
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        public void Reset()
         {
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            gameBoard = new Board();
+            isOver = false;
+            player1Turn = true;
         }
     }
 }

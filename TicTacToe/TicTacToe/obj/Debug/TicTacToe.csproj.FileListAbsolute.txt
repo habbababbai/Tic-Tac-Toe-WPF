@@ -35,3 +35,5 @@ D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacT
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.g.cs
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.baml
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.g.cs
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\MenuWindow.baml
