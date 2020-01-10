@@ -15,3 +15,14 @@ D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacT
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.xml
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CopyComplete
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.dll
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.pdb
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csprojAssemblyReference.cache
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CopyComplete
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
+D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb

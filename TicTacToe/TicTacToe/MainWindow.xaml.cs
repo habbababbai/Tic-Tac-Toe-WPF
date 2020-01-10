@@ -33,6 +33,7 @@ namespace TicTacToe
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var win4 = new EndWindow();
             var button = (Button)sender;
             var column = Grid.GetColumn(button);
             var row = Grid.GetRow(button);
@@ -44,14 +45,22 @@ namespace TicTacToe
                 button.Content = "O";
             if (newGame.isOver)
             {
-                string s;               
+                string s;
                 if (!newGame.player1Turn)
+                {
                     s = "Wygrał pierwszy gracz";
+                    win4.Show();
+                    this.Close();
+                }
                 else
-                    s = "Wygrał drugi gracz";
+                { 
+                s = "Wygrał drugi gracz";
                 txtbox.Text = s;
+                win4.Show();
+                this.Close();
                 newGame.Reset();
                 ClearBoard();
+                }
             }
         }
         private void ClearBoard()
