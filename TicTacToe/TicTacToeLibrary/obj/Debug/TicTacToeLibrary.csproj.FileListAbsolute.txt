@@ -26,3 +26,9 @@ D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary
 D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CopyComplete
 D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
 D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CopyComplete

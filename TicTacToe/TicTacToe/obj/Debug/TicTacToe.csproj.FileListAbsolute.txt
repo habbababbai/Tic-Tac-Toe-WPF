@@ -64,3 +64,11 @@ D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.Genera
 D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.CopyComplete
 D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\EndWindow.g.cs
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\App.baml
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\EndWindow.baml

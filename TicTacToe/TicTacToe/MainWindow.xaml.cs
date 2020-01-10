@@ -29,38 +29,28 @@ namespace TicTacToe
             InitializeComponent();
             newGame = new Game();
             bList = new List<Button>();
-            DataContext = newGame;
+            WriteScore();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var win4 = new EndWindow();
-            var button = (Button)sender;
-            var column = Grid.GetColumn(button);
-            var row = Grid.GetRow(button);
-            newGame.SetBlock(row, column);
-            bList.Add(button);
-            if (newGame.gameBoard.arr[row, column] == CellState.X)
-                button.Content = "X";
-            if (newGame.gameBoard.arr[row, column] == CellState.O)
-                button.Content = "O";
-            if (newGame.isOver)
+            if (!newGame.isOver)
             {
-                string s;
-                if (!newGame.player1Turn)
-                {
-                    s = "Wygrał pierwszy gracz";
-                    win4.Show();
-                    this.Close();
-                }
-                else
-                { 
-                s = "Wygrał drugi gracz";
-                txtbox.Text = s;
-                win4.Show();
-                this.Close();
+                var button = (Button)sender;
+                var column = Grid.GetColumn(button);
+                var row = Grid.GetRow(button);
+                newGame.SetBlock(row, column);
+                bList.Add(button);
+                if (newGame.gameBoard.arr[row, column] == CellState.X)
+                    button.Content = "X";
+                if (newGame.gameBoard.arr[row, column] == CellState.O)
+                    button.Content = "O";
+                WriteScore();
+            }
+            else
+            {
                 newGame.Reset();
                 ClearBoard();
-                }
+                WriteScore();
             }
         }
         private void ClearBoard()
@@ -69,6 +59,10 @@ namespace TicTacToe
             {
                 b.Content = "";
             }
+        }
+        private void WriteScore()
+        {
+            txtbox.Text = $"Gracz 1 : {newGame.p1Score}     Gracz 2 : {newGame.p2Score}";
         }
     }
 }

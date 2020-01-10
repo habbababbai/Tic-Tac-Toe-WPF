@@ -10,14 +10,18 @@ namespace TicTacToeLibrary
 {
     public class Game
     {
-        public bool player1Turn;
-        public Board gameBoard;
-        public bool isOver;
+        public bool player1Turn { get; private set; }
+        public Board gameBoard { get; private set; }
+        public bool isOver { get; private set; }
+        public int p1Score { get; private set; }
+        public int p2Score { get; private set; }
         public Game()
         {
             gameBoard = new Board();
             player1Turn = true;
             isOver = false;
+            p1Score = 0;
+            p2Score = 0;
         }
         public void SetBlock(int x, int y)
         {
@@ -31,19 +35,24 @@ namespace TicTacToeLibrary
                 {
                     gameBoard.arr[x,y] = CellState.O;
                 }
-                if (CheckForLine())
+                if (CheckDraw())
                     EndGame();
-
-                player1Turn = !player1Turn;
+                if (CheckForLine())
+                {
+                    EndGame();
+                    SetScore();
+                }
+                else
+                    player1Turn = !player1Turn;
             }
         }
-        public bool CheckForLine()
+        private bool CheckForLine()
         {
             if (CheckHorizontal() || CheckVertical() || CheckDiagonal())
                 return true;
             return false;
         }
-        public bool CheckVertical()
+        private bool CheckVertical()
         {
            for (int i = 0; i < 5; i++)
             {
@@ -56,7 +65,7 @@ namespace TicTacToeLibrary
             }
             return false;
         }
-        public bool CheckHorizontal()
+        private bool CheckHorizontal()
         {
             for (int i = 0; i < 5; i++)
             {
@@ -69,7 +78,7 @@ namespace TicTacToeLibrary
             }
             return false;
         }
-        public bool CheckDiagonal()
+        private bool CheckDiagonal()
         {
             if (gameBoard.arr[2,2] != CellState.Empty &&
                 (gameBoard.arr[0, 0] == gameBoard.arr[1, 1] &&
@@ -85,7 +94,20 @@ namespace TicTacToeLibrary
                 return true;
             return false;
         }
-        public void EndGame()
+        private bool CheckDraw()
+        {
+            bool draw = true;
+            for (int i = 0; i < gameBoard.arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < gameBoard.arr.GetLength(1); j++)
+                {
+                    if (gameBoard.arr[i, j] == CellState.Empty)
+                        draw = false;
+                }
+            }
+            return draw;
+        }
+        private void EndGame()
         {
             isOver = true;
         }
@@ -94,6 +116,13 @@ namespace TicTacToeLibrary
             gameBoard = new Board();
             isOver = false;
             player1Turn = true;
+        }
+        private void SetScore()
+        {
+            if (player1Turn)
+                p1Score++;
+            else
+                p2Score++;
         }
     }
 }
