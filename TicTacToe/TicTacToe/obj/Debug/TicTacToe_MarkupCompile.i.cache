@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\
 TicTacToe
 none
 false
 DEBUG;TRACE
-D:\BikeWPF\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\App.xaml
-32113590564
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\App.xaml
+41219967111
 
-8-20851057
-161634873724
-MainWindow.xaml;MenuWindow.xaml;EndWindow.xaml;
+9206467435
+16-598312776
+MainWindow.xaml;MenuWindow.xaml;EndWindow.xaml;PlayerVSCpu.xaml;
 
-False
+True
 
