@@ -79,7 +79,10 @@ namespace TicTacToe
         }
         private void WriteScore()
         {
-            txtbox.Text = $"Gracz : {newGame.p1Score}     Komputer : {newGame.p2Score}";
+            
+            txtbox2.Text = $"Gracz : {newGame.p1Score}     Komputer : {newGame.p2Score}";
         }
+
+       
     }
 }

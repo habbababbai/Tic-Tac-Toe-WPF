@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="Player VS Cpu" Height="500" Width="400">
-    <Window.Resources>
+        Title="Player VS Cpu" Height="500" Width="400"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+<Window.Resources>
 
 
         <Style TargetType="Button">
@@ -76,11 +78,51 @@
             <Button x:Name="b4_0" Grid.Column="0" Grid.Row="4" Click="Button_Click"/>
             <Button x:Name="b4_1" Grid.Column="1" Grid.Row="4" Click="Button_Click"/>
             <Button x:Name="b4_2" Grid.Column="2" Grid.Row="4" Click="Button_Click"/>
-            <Button x:Name="b4_3" Grid.Column="3" Grid.Row="4" Click="Button_Click"/>
+            <Button x:Name="b4_3" Grid.Column="3" Grid.Row="4" Click="Button_Click" Content=""/>
             <Button x:Name="b4_4" Grid.Column="4" Grid.Row="4" Click="Button_Click"/>
 
         </Grid>
-        <Button FontSize="10" Content="Wróć do menu" Click="ReturnToMenu" BorderThickness="2" Background="AliceBlue" Margin="85,425,32,19" RenderTransformOrigin="2.3,1.12" Grid.Column="1"></Button>
-        <TextBlock Name="txtbox" HorizontalAlignment="Left" Margin="115,406,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Grid.ColumnSpan="2" Width="150"/>
+
+        <Button
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                Height="30"
+                Width="120" 
+                Margin="0,-0,-460,-400"
+                BorderThickness="5,4,3,3"
+            Background="BlueViolet"
+            BorderBrush="MediumPurple"
+                materialDesign:ButtonAssist.CornerRadius="20,2,12,2"
+                ToolTip="MaterialDesignRaisedAccentButton with Round Top Corners" Click="ReturnToMenu">
+      <TextBlock
+             Text="Menu" FontWeight="Medium" Foreground="AliceBlue" FontSize="18" />
+        </Button>
+
+
+
+
+
+
+
+
+
+        <GroupBox
+           
+            Header="Wynik:"        
+            Style="{DynamicResource MaterialDesignGroupBox}"
+            Width="186"
+            Height="35"         
+            Margin="-222,0,-222,-404"
+            BorderThickness="0">
+            
+            <TextBlock 
+                    Foreground="Snow"
+                    Width="132"
+                    Height="25"
+                    Margin="0,-40,-45,0"
+                    FontSize="11"
+                    Name="txtbox2"
+                    TextWrapping="Wrap">
+              </TextBlock>
+        </GroupBox>
     </Grid>
 </Window>
