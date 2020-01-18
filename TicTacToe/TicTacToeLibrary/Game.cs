@@ -37,18 +37,20 @@ namespace TicTacToeLibrary
         /// Last row on which cpu set its block.
         /// </summary>
         public int lastXCPU { get; set; }
-        
+
         /// <summary>
         /// Last column on which cpu set its block.
         /// </summary>
         public int lastYCPU { get; set; }
-        
-        // private Random rnd = new Random();
+
+
+        private Random rnd = new Random();
         /// <summary>
         /// Constructor for Game class.
         /// </summary>
         public Game()
         {
+
             gameBoard = new Board();
             player1Turn = true;
             isOver = false;
@@ -62,15 +64,15 @@ namespace TicTacToeLibrary
         /// <param name="y">Column of block next to change</param>
         public void SetBlock(int x, int y)
         {
-            if (gameBoard.arr[x,y] == CellState.Empty)
+            if (gameBoard.arr[x, y] == CellState.Empty)
             {
                 if (player1Turn == true)
                 {
-                    gameBoard.arr[x,y] = CellState.X;
+                    gameBoard.arr[x, y] = CellState.X;
                 }
                 else
                 {
-                    gameBoard.arr[x,y] = CellState.O;
+                    gameBoard.arr[x, y] = CellState.O;
                 }
                 if (CheckDraw())
                     EndGame();
@@ -83,7 +85,7 @@ namespace TicTacToeLibrary
                     player1Turn = !player1Turn;
             }
         }
-        
+
 
 
 
@@ -110,9 +112,9 @@ namespace TicTacToeLibrary
         /// <returns></returns>
         private bool CheckVertical()
         {
-           for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                if (gameBoard.arr[i,0] != CellState.Empty &&
+                if (gameBoard.arr[i, 0] != CellState.Empty &&
                gameBoard.arr[i, 0] == gameBoard.arr[i, 1] &&
                gameBoard.arr[i, 1] == gameBoard.arr[i, 2] &&
                gameBoard.arr[i, 2] == gameBoard.arr[i, 3] &&
@@ -129,7 +131,7 @@ namespace TicTacToeLibrary
         {
             for (int i = 0; i < 5; i++)
             {
-                if (gameBoard.arr[0,i] != CellState.Empty &&
+                if (gameBoard.arr[0, i] != CellState.Empty &&
                gameBoard.arr[0, i] == gameBoard.arr[1, i] &&
                gameBoard.arr[1, i] == gameBoard.arr[2, i] &&
                gameBoard.arr[2, i] == gameBoard.arr[3, i] &&
@@ -144,7 +146,7 @@ namespace TicTacToeLibrary
         /// <returns></returns>
         private bool CheckDiagonal()
         {
-            if (gameBoard.arr[2,2] != CellState.Empty &&
+            if (gameBoard.arr[2, 2] != CellState.Empty &&
                 (gameBoard.arr[0, 0] == gameBoard.arr[1, 1] &&
                 gameBoard.arr[1, 1] == gameBoard.arr[2, 2] &&
                 gameBoard.arr[2, 2] == gameBoard.arr[3, 3] &&
@@ -215,19 +217,22 @@ namespace TicTacToeLibrary
         /// </summary>
         public void SetBlockCPU()   // do zrobienia dla Darusia
         {
+
+
+
+
             if (!player1Turn)
             {
 
-                //sprawdzenie czy gracz nie wygra w następnej rundzie oraz blokada gracza zeby nie wygrał
-                if (gameBoard.arr[0, 0] == CellState.Empty &&  // (0,0) sprawdzenie czy za 1 runde gracz nie wygra
-                    gameBoard.arr[0, 1] == CellState.X &&
-                    gameBoard.arr[0, 2] == CellState.X &&
-                    gameBoard.arr[0, 3] == CellState.X &&
-                    gameBoard.arr[0, 4] == CellState.X)
+
+
+                int x = rnd.Next(0, 5);
+                int y = rnd.Next(0, 5);
+                if (gameBoard.arr[x, y] == CellState.Empty)
                 {
-                    gameBoard.arr[0, 0] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 0;
+                    gameBoard.arr[x, y] = CellState.O;
+                    lastXCPU = x;
+                    lastYCPU = y;
                     if (CheckDraw())
                         EndGame();
                     if (CheckForLine())
@@ -237,273 +242,214 @@ namespace TicTacToeLibrary
                     }
                 }
                 else
+                {
+                    SetBlockCPU();
+                }
+            }
+            player1Turn = true;
+
+
+
+
+
+
+            //sprawdzenie czy gracz nie wygra w następnej rundzie oraz blokada gracza zeby nie wygrał
+            if (gameBoard.arr[0, 0] == CellState.Empty &&  // (0,0) sprawdzenie czy za 1 runde gracz nie wygra
+                gameBoard.arr[0, 1] == CellState.X &&
+                gameBoard.arr[0, 2] == CellState.X &&
+                gameBoard.arr[0, 3] == CellState.X &&
+                gameBoard.arr[0, 4] == CellState.X)
+            {
+                gameBoard.arr[0, 0] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[0, 1] == CellState.Empty &&    //(0,1) <--- gdy gracz da X w to pole to wygra
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[0, 2] == CellState.X &&
                     gameBoard.arr[0, 3] == CellState.X &&
                     gameBoard.arr[0, 4] == CellState.X)
-                {
-                    gameBoard.arr[0, 1] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 1] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[0, 2] == CellState.Empty &&  //(0,2)
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[0, 1] == CellState.X &&
                     gameBoard.arr[0, 3] == CellState.X &&
                     gameBoard.arr[0, 4] == CellState.X)
-                {
-                    gameBoard.arr[0, 2] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 2] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 2;
+
+            }
+        
+            else
 
                 if (gameBoard.arr[0, 3] == CellState.Empty && //(0,3)
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[0, 1] == CellState.X &&
                     gameBoard.arr[0, 2] == CellState.X &&
                     gameBoard.arr[0, 4] == CellState.X)
-                {
-                    gameBoard.arr[0, 3] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 3] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[0, 4] == CellState.Empty && //(0,4)
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[0, 1] == CellState.X &&
                     gameBoard.arr[0, 2] == CellState.X &&
                     gameBoard.arr[0, 3] == CellState.X)
-                {
-                    gameBoard.arr[0, 4] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 4] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 4;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 0] == CellState.Empty && //(1,0)
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[1, 2] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X)
-                {
-                    gameBoard.arr[1, 0] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 0] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 1] == CellState.Empty &&  //(1,1)
                     gameBoard.arr[1, 0] == CellState.X &&
                     gameBoard.arr[1, 2] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X)
-                {
-                    gameBoard.arr[1, 1] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 1] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 2] == CellState.Empty && //(1,2)
                     gameBoard.arr[1, 0] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X)
-                {
-                    gameBoard.arr[1, 2] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 2] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 3] == CellState.Empty &&  //(1,3)
                     gameBoard.arr[1, 0] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[1, 2] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X)
-                {
-                    gameBoard.arr[1, 3] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 3] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 4] == CellState.Empty && //(1,4)
                     gameBoard.arr[1, 0] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[1, 2] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X)
-                {
-                    gameBoard.arr[1, 4] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 4] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 4;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 0] == CellState.Empty &&  //(2,0)
                     gameBoard.arr[2, 1] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[2, 3] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X)
-                {
-                    gameBoard.arr[2, 0] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 0] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 1] == CellState.Empty && //(2,1)
                     gameBoard.arr[2, 0] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[2, 3] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X)
-                {
-                    gameBoard.arr[2, 1] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 1] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 2] == CellState.Empty && //(2,2)
                     gameBoard.arr[2, 0] == CellState.X &&
                     gameBoard.arr[2, 1] == CellState.X &&
                     gameBoard.arr[2, 3] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X)
-                {
-                    gameBoard.arr[2, 2] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 2] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 3] == CellState.Empty && //(2,3)
                     gameBoard.arr[2, 0] == CellState.X &&
                     gameBoard.arr[2, 1] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X)
-                {
-                    gameBoard.arr[2, 3] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 3] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 4] == CellState.Empty && //(2,4)
                     gameBoard.arr[2, 0] == CellState.X &&
                     gameBoard.arr[2, 1] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[2, 3] == CellState.X)
-                {
-                    gameBoard.arr[2, 4] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
+            {
+                gameBoard.arr[2, 4] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 4;
 
-                else
+            }
+
+            else
 
                 // wiersz (3,0)..(3,4)
                 // wygrywający
@@ -515,327 +461,226 @@ namespace TicTacToeLibrary
                     gameBoard.arr[4, 2] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[4, 0] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[4, 0] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 1] == CellState.Empty && //(4,1)
                     gameBoard.arr[4, 0] == CellState.X &&
                     gameBoard.arr[4, 2] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[4, 1] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[4, 1] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 2] == CellState.Empty &&
                     gameBoard.arr[4, 0] == CellState.X &&   //(4,2)
                     gameBoard.arr[4, 1] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[4, 2] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[4, 2] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 3] == CellState.Empty && //(4,3)
                     gameBoard.arr[4, 0] == CellState.X &&
                     gameBoard.arr[4, 1] == CellState.X &&
                     gameBoard.arr[4, 2] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[4, 3] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
+            {
+                gameBoard.arr[4, 3] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 3;
 
-                else
+            }
+
+            else
 
                 if (gameBoard.arr[4, 4] == CellState.Empty && //(4,4)
                     gameBoard.arr[4, 0] == CellState.X &&
                     gameBoard.arr[4, 1] == CellState.X &&
                     gameBoard.arr[4, 2] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X)
-                {
-                    gameBoard.arr[4, 4] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                //zabezpieczenie pionowe 
+            {
+                gameBoard.arr[4, 4] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 4;
 
-                else
+            }
+            //zabezpieczenie pionowe 
+
+            else
 
                 if (gameBoard.arr[0, 0] == CellState.Empty && //(0,0)
                     gameBoard.arr[1, 0] == CellState.X &&
                     gameBoard.arr[2, 0] == CellState.X &&
                     gameBoard.arr[3, 0] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
-                {
-                    gameBoard.arr[0, 0] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 0] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 0] == CellState.Empty && //(1,0)
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[2, 0] == CellState.X &&
                     gameBoard.arr[3, 0] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
-                {
-                    gameBoard.arr[1, 0] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 0] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 0] == CellState.Empty && //(2,0)
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[1, 0] == CellState.X &&
                     gameBoard.arr[3, 0] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
-                {
-                    gameBoard.arr[2, 0] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 0] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 0] == CellState.Empty &&  //(4,0)
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[1, 0] == CellState.X &&
                     gameBoard.arr[2, 0] == CellState.X &&
                     gameBoard.arr[3, 0] == CellState.X)
-                {
-                    gameBoard.arr[4, 0] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
+            {
+                gameBoard.arr[4, 0] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 0;
 
-                else
+            }
+
+            else
 
                 if (gameBoard.arr[0, 1] == CellState.Empty && //(0,1)
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[2, 1] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 1] == CellState.X)
-                {
-                    gameBoard.arr[0, 1] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 1] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 1] == CellState.Empty && //(1,1)
                     gameBoard.arr[0, 1] == CellState.X &&
                     gameBoard.arr[2, 1] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 1] == CellState.X)
-                {
-                    gameBoard.arr[1, 1] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 1] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 1] == CellState.Empty && //(2,1)
                     gameBoard.arr[0, 1] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 1] == CellState.X)
-                {
-                    gameBoard.arr[2, 1] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 1] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 1] == CellState.Empty &&  //(4,1)
                     gameBoard.arr[0, 1] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[2, 1] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X)
-                {
-                    gameBoard.arr[4, 1] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[4, 1] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 1;
+
+
+            }
+            else
 
                 if (gameBoard.arr[0, 2] == CellState.Empty && //(0,2)
                     gameBoard.arr[1, 2] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 2] == CellState.X &&
                     gameBoard.arr[4, 2] == CellState.X)
-                {
-                    gameBoard.arr[0, 2] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 2] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 2] == CellState.Empty && //(1,2)
                     gameBoard.arr[0, 2] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 2] == CellState.X &&
                     gameBoard.arr[4, 2] == CellState.X)
-                {
-                    gameBoard.arr[1, 2] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 2] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 2] == CellState.Empty && //(2,2)
                     gameBoard.arr[0, 2] == CellState.X &&
                     gameBoard.arr[1, 2] == CellState.X &&
                     gameBoard.arr[3, 2] == CellState.X &&
                     gameBoard.arr[4, 2] == CellState.X)
-                {
-                    gameBoard.arr[2, 2] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 2] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 2] == CellState.Empty && //(4,2)
                     gameBoard.arr[0, 2] == CellState.X &&
                     gameBoard.arr[1, 2] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 2] == CellState.X)
-                {
-                    gameBoard.arr[4, 2] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[4, 2] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 2;
+
+            }
+            else
 
 
 
@@ -844,417 +689,255 @@ namespace TicTacToeLibrary
                     gameBoard.arr[2, 3] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X)
-                {
-                    gameBoard.arr[0, 3] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 3] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 3] == CellState.Empty && //(1,3)
                     gameBoard.arr[0, 3] == CellState.X &&
                     gameBoard.arr[2, 3] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X)
-                {
-                    gameBoard.arr[1, 3] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 3] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 3] == CellState.Empty && //(2,3)
                     gameBoard.arr[0, 3] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X)
-                {
-                    gameBoard.arr[2, 3] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 3] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 3] == CellState.Empty && //(4,3)
                     gameBoard.arr[0, 3] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[2, 3] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X)
-                {
-                    gameBoard.arr[4, 3] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[4, 3] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[0, 4] == CellState.Empty &&  //(0,4)
                     gameBoard.arr[1, 4] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[0, 4] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 4] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 4;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 4] == CellState.Empty && //(1,4)
                     gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[1, 4] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 4] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 4;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 4] == CellState.Empty && //(2,4)
                     gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[2, 4] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 4] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 4;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 4] == CellState.Empty &&  //(4,4)
                     gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X)
-                {
-                    gameBoard.arr[4, 4] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                // ukosy 
+            {
+                gameBoard.arr[4, 4] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 4;
 
-                else
+            }
+            // ukosy 
+
+            else
 
                 if (gameBoard.arr[0, 0] == CellState.Empty && //(0,0) ukos\
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[0, 0] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 0] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 0;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 1] == CellState.Empty && //(1,1) ukos\
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[1, 1] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 1] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 1;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 2] == CellState.Empty && //(2,2) ukos\
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
-                {
-                    gameBoard.arr[2, 2] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 2] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 4] == CellState.Empty && //(4,4) ukos\
                     gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X)
-                {
-                    gameBoard.arr[4, 4] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[4, 4] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 4;
+
+            }
+            else
 
                 if (gameBoard.arr[0, 4] == CellState.Empty && //(0,4) ukos/
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
-                {
-                    gameBoard.arr[0, 4] = CellState.O;
-                    lastXCPU = 0;
-                    lastYCPU = 4;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[0, 4] = CellState.O;
+                lastXCPU = 0;
+                lastYCPU = 4;
+
+            }
+            else
 
                 if (gameBoard.arr[1, 3] == CellState.Empty && //(1,3) ukos/
                     gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
-                {
-                    gameBoard.arr[1, 3] = CellState.O;
-                    lastXCPU = 1;
-                    lastYCPU = 3;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[1, 3] = CellState.O;
+                lastXCPU = 1;
+                lastYCPU = 3;
+
+            }
+            else
 
                 if (gameBoard.arr[2, 2] == CellState.Empty &&  //(2,2) ukos/
                     gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
-                {
-                    gameBoard.arr[2, 2] = CellState.O;
-                    lastXCPU = 2;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
+            {
+                gameBoard.arr[2, 2] = CellState.O;
+                lastXCPU = 2;
+                lastYCPU = 2;
+
+            }
+            else
 
                 if (gameBoard.arr[4, 0] == CellState.Empty && //(4,0) ukos/
                     gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X)
-                {
-                    gameBoard.arr[4, 0] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
-                //=======Ruchy PCU=======
+            {
+                gameBoard.arr[4, 0] = CellState.O;
+                lastXCPU = 4;
+                lastYCPU = 0;
 
-
-
-                    // TO DO
-                    //if (gameBoard.arr[3, 0] == CellState.Empty&&
-                    //    gameBoard.arr[0, 0] == CellState.Empty &&
-                    //       gameBoard.arr[0, 1] == CellState.Empty &&
-                    //       gameBoard.arr[0, 2] == CellState.Empty &&
-                    //       gameBoard.arr[0, 3] == CellState.Empty &&
-                    //       gameBoard.arr[0, 4] == CellState.Empty)
-                    //    {
-                    //        gameBoard.arr[1, 3] = CellState.O;
-                    //        lastXCPU = 1;
-                    //        lastYCPU = 3;
-                //if (CheckDraw())
-                //    EndGame();
-                //if (CheckForLine())
-                //{
-                //    EndGame();
-                //    SetScore();
-                //}
-                //}
-
-
-
-
-
-                // ok
-                if (gameBoard.arr[0, 0] == CellState.X) // jesli x = 0 i y = 0 jest puste to... 
-                {
-                    gameBoard.arr[3, 0] = CellState.O;
-                    lastXCPU = 3;     // Las
-                    lastYCPU = 0;
-
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-
-
-
-                if (gameBoard.arr[0, 0] == CellState.Empty) // jesli x = 0 i y = 0 jest puste to... 
-                {
-                    gameBoard.arr[0, 0] = CellState.O;
-                    lastXCPU = 0;     // Las
-                    lastYCPU = 0;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
-                    if (gameBoard.arr[0, 1] == CellState.Empty) // jesli x = 0 i y = 0 jest puste to... 
-                {
-                    gameBoard.arr[0, 1] = CellState.O;
-                    lastXCPU = 0;     // Las
-                    lastYCPU = 1;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                else
-                {
-                    SetBlockCPU();
-                }
             }
 
-            player1Turn = true;
+            //=======Ruchy PCU=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+       
