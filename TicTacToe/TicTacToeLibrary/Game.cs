@@ -219,10 +219,11 @@ namespace TicTacToeLibrary
             {
 
                 //sprawdzenie czy gracz nie wygra w następnej rundzie oraz blokada gracza zeby nie wygrał
-                if (gameBoard.arr[0, 1] == CellState.X &&      // (0,0) sprawdzenie czy za 1 runde gracz nie wygra
-                gameBoard.arr[0, 2] == CellState.X &&
-                gameBoard.arr[0, 3] == CellState.X &&
-                gameBoard.arr[0, 4] == CellState.X)
+                if (gameBoard.arr[0, 0] == CellState.Empty &&  // (0,0) sprawdzenie czy za 1 runde gracz nie wygra
+                    gameBoard.arr[0, 1] == CellState.X &&
+                    gameBoard.arr[0, 2] == CellState.X &&
+                    gameBoard.arr[0, 3] == CellState.X &&
+                    gameBoard.arr[0, 4] == CellState.X)
                 {
                     gameBoard.arr[0, 0] = CellState.O;
                     lastXCPU = 0;
@@ -237,10 +238,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&      //(0,1) <--- gdy gracz da X w to pole to wygra
-                gameBoard.arr[0, 2] == CellState.X &&
-                gameBoard.arr[0, 3] == CellState.X &&
-                gameBoard.arr[0, 4] == CellState.X)
+                if (gameBoard.arr[0, 1] == CellState.Empty &&    //(0,1) <--- gdy gracz da X w to pole to wygra
+                    gameBoard.arr[0, 0] == CellState.X &&
+                    gameBoard.arr[0, 2] == CellState.X &&
+                    gameBoard.arr[0, 3] == CellState.X &&
+                    gameBoard.arr[0, 4] == CellState.X)
                 {
                     gameBoard.arr[0, 1] = CellState.O;
                     lastXCPU = 0;
@@ -255,10 +257,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&     //(0,2)
-                gameBoard.arr[0, 1] == CellState.X &&
-                gameBoard.arr[0, 3] == CellState.X &&
-                gameBoard.arr[0, 4] == CellState.X)
+                if (gameBoard.arr[0, 2] == CellState.Empty &&  //(0,2)
+                    gameBoard.arr[0, 0] == CellState.X &&
+                    gameBoard.arr[0, 1] == CellState.X &&
+                    gameBoard.arr[0, 3] == CellState.X &&
+                    gameBoard.arr[0, 4] == CellState.X)
                 {
                     gameBoard.arr[0, 2] = CellState.O;
                     lastXCPU = 0;
@@ -273,10 +276,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(0,3)
-                gameBoard.arr[0, 1] == CellState.X &&
-                gameBoard.arr[0, 2] == CellState.X &&
-                gameBoard.arr[0, 4] == CellState.X)
+                if (gameBoard.arr[0, 3] == CellState.Empty && //(0,3)
+                    gameBoard.arr[0, 0] == CellState.X &&
+                    gameBoard.arr[0, 1] == CellState.X &&
+                    gameBoard.arr[0, 2] == CellState.X &&
+                    gameBoard.arr[0, 4] == CellState.X)
                 {
                     gameBoard.arr[0, 3] = CellState.O;
                     lastXCPU = 0;
@@ -291,10 +295,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(0,4)
-                gameBoard.arr[0, 1] == CellState.X &&
-                gameBoard.arr[0, 2] == CellState.X &&
-                gameBoard.arr[0, 3] == CellState.X)
+                if (gameBoard.arr[0, 4] == CellState.Empty && //(0,4)
+                    gameBoard.arr[0, 0] == CellState.X &&
+                    gameBoard.arr[0, 1] == CellState.X &&
+                    gameBoard.arr[0, 2] == CellState.X &&
+                    gameBoard.arr[0, 3] == CellState.X)
                 {
                     gameBoard.arr[0, 4] = CellState.O;
                     lastXCPU = 0;
@@ -309,10 +314,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 1] == CellState.X &&   //(1,0)
-                gameBoard.arr[1, 2] == CellState.X &&
-                gameBoard.arr[1, 3] == CellState.X &&
-                gameBoard.arr[1, 4] == CellState.X)
+                if (gameBoard.arr[1, 0] == CellState.Empty && //(1,0)
+                    gameBoard.arr[1, 1] == CellState.X &&
+                    gameBoard.arr[1, 2] == CellState.X &&
+                    gameBoard.arr[1, 3] == CellState.X &&
+                    gameBoard.arr[1, 4] == CellState.X)
                 {
                     gameBoard.arr[1, 0] = CellState.O;
                     lastXCPU = 1;
@@ -327,10 +333,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 0] == CellState.X &&   //(1,1)
-                gameBoard.arr[1, 2] == CellState.X &&
-                gameBoard.arr[1, 3] == CellState.X &&
-                gameBoard.arr[1, 4] == CellState.X)
+                if (gameBoard.arr[1, 1] == CellState.Empty &&  //(1,1)
+                    gameBoard.arr[1, 0] == CellState.X &&
+                    gameBoard.arr[1, 2] == CellState.X &&
+                    gameBoard.arr[1, 3] == CellState.X &&
+                    gameBoard.arr[1, 4] == CellState.X)
                 {
                     gameBoard.arr[1, 1] = CellState.O;
                     lastXCPU = 1;
@@ -345,10 +352,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 0] == CellState.X &&   //(1,2)
-                gameBoard.arr[1, 1] == CellState.X &&
-                gameBoard.arr[1, 3] == CellState.X &&
-                gameBoard.arr[1, 4] == CellState.X)
+                if (gameBoard.arr[1, 2] == CellState.Empty && //(1,2)
+                    gameBoard.arr[1, 0] == CellState.X &&
+                    gameBoard.arr[1, 1] == CellState.X &&
+                    gameBoard.arr[1, 3] == CellState.X &&
+                    gameBoard.arr[1, 4] == CellState.X)
                 {
                     gameBoard.arr[1, 2] = CellState.O;
                     lastXCPU = 1;
@@ -363,10 +371,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 0] == CellState.X &&   //(1,3)
-                gameBoard.arr[1, 1] == CellState.X &&
-                gameBoard.arr[1, 2] == CellState.X &&
-                gameBoard.arr[1, 4] == CellState.X)
+                if (gameBoard.arr[1, 3] == CellState.Empty &&  //(1,3)
+                    gameBoard.arr[1, 0] == CellState.X &&
+                    gameBoard.arr[1, 1] == CellState.X &&
+                    gameBoard.arr[1, 2] == CellState.X &&
+                    gameBoard.arr[1, 4] == CellState.X)
                 {
                     gameBoard.arr[1, 3] = CellState.O;
                     lastXCPU = 1;
@@ -381,10 +390,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 0] == CellState.X &&   //(1,4)
-                gameBoard.arr[1, 1] == CellState.X &&
-                gameBoard.arr[1, 2] == CellState.X &&
-                gameBoard.arr[1, 3] == CellState.X)
+                if (gameBoard.arr[1, 4] == CellState.Empty && //(1,4)
+                    gameBoard.arr[1, 0] == CellState.X &&
+                    gameBoard.arr[1, 1] == CellState.X &&
+                    gameBoard.arr[1, 2] == CellState.X &&
+                    gameBoard.arr[1, 3] == CellState.X)
                 {
                     gameBoard.arr[1, 4] = CellState.O;
                     lastXCPU = 1;
@@ -399,10 +409,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[2, 1] == CellState.X &&   //(2,0)
-                gameBoard.arr[2, 2] == CellState.X &&
-                gameBoard.arr[2, 3] == CellState.X &&
-                gameBoard.arr[2, 4] == CellState.X)
+                if (gameBoard.arr[2, 0] == CellState.Empty &&  //(2,0)
+                    gameBoard.arr[2, 1] == CellState.X &&
+                    gameBoard.arr[2, 2] == CellState.X &&
+                    gameBoard.arr[2, 3] == CellState.X &&
+                    gameBoard.arr[2, 4] == CellState.X)
                 {
                     gameBoard.arr[2, 0] = CellState.O;
                     lastXCPU = 2;
@@ -417,10 +428,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[2, 0] == CellState.X &&   //(2,1)
-                gameBoard.arr[2, 2] == CellState.X &&
-                gameBoard.arr[2, 3] == CellState.X &&
-                gameBoard.arr[2, 4] == CellState.X)
+                if (gameBoard.arr[2, 1] == CellState.Empty && //(2,1)
+                    gameBoard.arr[2, 0] == CellState.X &&
+                    gameBoard.arr[2, 2] == CellState.X &&
+                    gameBoard.arr[2, 3] == CellState.X &&
+                    gameBoard.arr[2, 4] == CellState.X)
                 {
                     gameBoard.arr[2, 1] = CellState.O;
                     lastXCPU = 2;
@@ -435,10 +447,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[2, 0] == CellState.X &&   //(2,2)
-                gameBoard.arr[2, 1] == CellState.X &&
-                gameBoard.arr[2, 3] == CellState.X &&
-                gameBoard.arr[2, 4] == CellState.X)
+                if (gameBoard.arr[2, 2] == CellState.Empty && //(2,2)
+                    gameBoard.arr[2, 0] == CellState.X &&
+                    gameBoard.arr[2, 1] == CellState.X &&
+                    gameBoard.arr[2, 3] == CellState.X &&
+                    gameBoard.arr[2, 4] == CellState.X)
                 {
                     gameBoard.arr[2, 2] = CellState.O;
                     lastXCPU = 2;
@@ -453,10 +466,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[2, 0] == CellState.X &&   //(2,3)
-                gameBoard.arr[2, 1] == CellState.X &&
-                gameBoard.arr[2, 2] == CellState.X &&
-                gameBoard.arr[2, 4] == CellState.X)
+                if (gameBoard.arr[2, 3] == CellState.Empty && //(2,3)
+                    gameBoard.arr[2, 0] == CellState.X &&
+                    gameBoard.arr[2, 1] == CellState.X &&
+                    gameBoard.arr[2, 2] == CellState.X &&
+                    gameBoard.arr[2, 4] == CellState.X)
                 {
                     gameBoard.arr[2, 3] = CellState.O;
                     lastXCPU = 2;
@@ -471,10 +485,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[2, 0] == CellState.X &&   //(2,4)
-                gameBoard.arr[2, 1] == CellState.X &&
-                gameBoard.arr[2, 2] == CellState.X &&
-                gameBoard.arr[2, 3] == CellState.X)
+                if (gameBoard.arr[2, 4] == CellState.Empty && //(2,4)
+                    gameBoard.arr[2, 0] == CellState.X &&
+                    gameBoard.arr[2, 1] == CellState.X &&
+                    gameBoard.arr[2, 2] == CellState.X &&
+                    gameBoard.arr[2, 3] == CellState.X)
                 {
                     gameBoard.arr[2, 4] = CellState.O;
                     lastXCPU = 2;
@@ -495,10 +510,11 @@ namespace TicTacToeLibrary
 
 
 
-                if (gameBoard.arr[4, 1] == CellState.X &&   //(4,0)
-                gameBoard.arr[4, 2] == CellState.X &&
-                gameBoard.arr[4, 3] == CellState.X &&
-                gameBoard.arr[4, 4] == CellState.X)
+                if (gameBoard.arr[4, 0] == CellState.Empty && //(4,0)
+                    gameBoard.arr[4, 1] == CellState.X &&
+                    gameBoard.arr[4, 2] == CellState.X &&
+                    gameBoard.arr[4, 3] == CellState.X &&
+                    gameBoard.arr[4, 4] == CellState.X)
                 {
                     gameBoard.arr[4, 0] = CellState.O;
                     lastXCPU = 4;
@@ -513,10 +529,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[4, 0] == CellState.X &&   //(4,1)
-               gameBoard.arr[4, 2] == CellState.X &&
-               gameBoard.arr[4, 3] == CellState.X &&
-               gameBoard.arr[4, 4] == CellState.X)
+                if (gameBoard.arr[4, 1] == CellState.Empty && //(4,1)
+                    gameBoard.arr[4, 0] == CellState.X &&
+                    gameBoard.arr[4, 2] == CellState.X &&
+                    gameBoard.arr[4, 3] == CellState.X &&
+                    gameBoard.arr[4, 4] == CellState.X)
                 {
                     gameBoard.arr[4, 1] = CellState.O;
                     lastXCPU = 4;
@@ -531,10 +548,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[4, 0] == CellState.X &&   //(4,2)
-               gameBoard.arr[4, 1] == CellState.X &&
-               gameBoard.arr[4, 3] == CellState.X &&
-               gameBoard.arr[4, 4] == CellState.X)
+                if (gameBoard.arr[4, 2] == CellState.Empty &&
+                    gameBoard.arr[4, 0] == CellState.X &&   //(4,2)
+                    gameBoard.arr[4, 1] == CellState.X &&
+                    gameBoard.arr[4, 3] == CellState.X &&
+                    gameBoard.arr[4, 4] == CellState.X)
                 {
                     gameBoard.arr[4, 2] = CellState.O;
                     lastXCPU = 4;
@@ -549,10 +567,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[4, 0] == CellState.X &&   //(4,3)
-               gameBoard.arr[4, 1] == CellState.X &&
-               gameBoard.arr[4, 2] == CellState.X &&
-               gameBoard.arr[4, 4] == CellState.X)
+                if (gameBoard.arr[4, 3] == CellState.Empty && //(4,3)
+                    gameBoard.arr[4, 0] == CellState.X &&
+                    gameBoard.arr[4, 1] == CellState.X &&
+                    gameBoard.arr[4, 2] == CellState.X &&
+                    gameBoard.arr[4, 4] == CellState.X)
                 {
                     gameBoard.arr[4, 3] = CellState.O;
                     lastXCPU = 4;
@@ -568,10 +587,11 @@ namespace TicTacToeLibrary
 
                 else
 
-                if (gameBoard.arr[4, 0] == CellState.X &&   //(4,4)
-               gameBoard.arr[4, 1] == CellState.X &&
-               gameBoard.arr[4, 2] == CellState.X &&
-               gameBoard.arr[4, 3] == CellState.X)
+                if (gameBoard.arr[4, 4] == CellState.Empty && //(4,4)
+                    gameBoard.arr[4, 0] == CellState.X &&
+                    gameBoard.arr[4, 1] == CellState.X &&
+                    gameBoard.arr[4, 2] == CellState.X &&
+                    gameBoard.arr[4, 3] == CellState.X)
                 {
                     gameBoard.arr[4, 4] = CellState.O;
                     lastXCPU = 4;
@@ -588,10 +608,11 @@ namespace TicTacToeLibrary
 
                 else
 
-                if (gameBoard.arr[1, 0] == CellState.X &&   //(0,0)
-               gameBoard.arr[2, 0] == CellState.X &&
-               gameBoard.arr[3, 0] == CellState.X &&
-               gameBoard.arr[4, 0] == CellState.X)
+                if (gameBoard.arr[0, 0] == CellState.Empty && //(0,0)
+                    gameBoard.arr[1, 0] == CellState.X &&
+                    gameBoard.arr[2, 0] == CellState.X &&
+                    gameBoard.arr[3, 0] == CellState.X &&
+                    gameBoard.arr[4, 0] == CellState.X)
                 {
                     gameBoard.arr[0, 0] = CellState.O;
                     lastXCPU = 0;
@@ -606,10 +627,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(1,0)
-               gameBoard.arr[2, 0] == CellState.X &&
-               gameBoard.arr[3, 0] == CellState.X &&
-               gameBoard.arr[4, 0] == CellState.X)
+                if (gameBoard.arr[1, 0] == CellState.Empty && //(1,0)
+                    gameBoard.arr[0, 0] == CellState.X &&
+                    gameBoard.arr[2, 0] == CellState.X &&
+                    gameBoard.arr[3, 0] == CellState.X &&
+                    gameBoard.arr[4, 0] == CellState.X)
                 {
                     gameBoard.arr[1, 0] = CellState.O;
                     lastXCPU = 1;
@@ -624,10 +646,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(2,0)
-               gameBoard.arr[1, 0] == CellState.X &&
-               gameBoard.arr[3, 0] == CellState.X &&
-               gameBoard.arr[4, 0] == CellState.X)
+                if (gameBoard.arr[2, 0] == CellState.Empty && //(2,0)
+                    gameBoard.arr[0, 0] == CellState.X &&
+                    gameBoard.arr[1, 0] == CellState.X &&
+                    gameBoard.arr[3, 0] == CellState.X &&
+                    gameBoard.arr[4, 0] == CellState.X)
                 {
                     gameBoard.arr[2, 0] = CellState.O;
                     lastXCPU = 2;
@@ -642,10 +665,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(4,0)
-               gameBoard.arr[1, 0] == CellState.X &&
-               gameBoard.arr[2, 0] == CellState.X &&
-               gameBoard.arr[3, 0] == CellState.X)
+                if (gameBoard.arr[4, 0] == CellState.Empty &&  //(4,0)
+                    gameBoard.arr[0, 0] == CellState.X &&
+                    gameBoard.arr[1, 0] == CellState.X &&
+                    gameBoard.arr[2, 0] == CellState.X &&
+                    gameBoard.arr[3, 0] == CellState.X)
                 {
                     gameBoard.arr[4, 0] = CellState.O;
                     lastXCPU = 4;
@@ -661,10 +685,11 @@ namespace TicTacToeLibrary
 
                 else
 
-                if (gameBoard.arr[1, 1] == CellState.X &&   //(0,1)
-               gameBoard.arr[2, 1] == CellState.X &&
-               gameBoard.arr[3, 1] == CellState.X &&
-               gameBoard.arr[4, 1] == CellState.X)
+                if (gameBoard.arr[0, 1] == CellState.Empty && //(0,1)
+                    gameBoard.arr[1, 1] == CellState.X &&
+                    gameBoard.arr[2, 1] == CellState.X &&
+                    gameBoard.arr[3, 1] == CellState.X &&
+                    gameBoard.arr[4, 1] == CellState.X)
                 {
                     gameBoard.arr[0, 1] = CellState.O;
                     lastXCPU = 0;
@@ -679,10 +704,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 1] == CellState.X &&   //(1,1)
-               gameBoard.arr[1, 1] == CellState.X &&
-               gameBoard.arr[2, 1] == CellState.X &&
-               gameBoard.arr[3, 1] == CellState.X)
+                if (gameBoard.arr[1, 1] == CellState.Empty && //(1,1)
+                    gameBoard.arr[0, 1] == CellState.X &&
+                    gameBoard.arr[2, 1] == CellState.X &&
+                    gameBoard.arr[3, 1] == CellState.X &&
+                    gameBoard.arr[4, 1] == CellState.X)
                 {
                     gameBoard.arr[1, 1] = CellState.O;
                     lastXCPU = 1;
@@ -697,10 +723,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 1] == CellState.X &&   //(2,1)
-               gameBoard.arr[1, 1] == CellState.X &&
-               gameBoard.arr[3, 1] == CellState.X &&
-               gameBoard.arr[4, 1] == CellState.X)
+                if (gameBoard.arr[2, 1] == CellState.Empty && //(2,1)
+                    gameBoard.arr[0, 1] == CellState.X &&
+                    gameBoard.arr[1, 1] == CellState.X &&
+                    gameBoard.arr[3, 1] == CellState.X &&
+                    gameBoard.arr[4, 1] == CellState.X)
                 {
                     gameBoard.arr[2, 1] = CellState.O;
                     lastXCPU = 2;
@@ -715,10 +742,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 1] == CellState.X &&   //(4,1)
-               gameBoard.arr[1, 1] == CellState.X &&
-               gameBoard.arr[2, 1] == CellState.X &&
-               gameBoard.arr[3, 1] == CellState.X)
+                if (gameBoard.arr[4, 1] == CellState.Empty &&  //(4,1)
+                    gameBoard.arr[0, 1] == CellState.X &&
+                    gameBoard.arr[1, 1] == CellState.X &&
+                    gameBoard.arr[2, 1] == CellState.X &&
+                    gameBoard.arr[3, 1] == CellState.X)
                 {
                     gameBoard.arr[4, 1] = CellState.O;
                     lastXCPU = 4;
@@ -733,10 +761,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 2] == CellState.X &&   //(0,2)
-               gameBoard.arr[2, 2] == CellState.X &&
-               gameBoard.arr[3, 2] == CellState.X &&
-               gameBoard.arr[4, 2] == CellState.X)
+                if (gameBoard.arr[0, 2] == CellState.Empty && //(0,2)
+                    gameBoard.arr[1, 2] == CellState.X &&
+                    gameBoard.arr[2, 2] == CellState.X &&
+                    gameBoard.arr[3, 2] == CellState.X &&
+                    gameBoard.arr[4, 2] == CellState.X)
                 {
                     gameBoard.arr[0, 2] = CellState.O;
                     lastXCPU = 0;
@@ -751,10 +780,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 2] == CellState.X &&   //(1,2)
-               gameBoard.arr[2, 2] == CellState.X &&
-               gameBoard.arr[3, 2] == CellState.X &&
-               gameBoard.arr[4, 2] == CellState.X)
+                if (gameBoard.arr[1, 2] == CellState.Empty && //(1,2)
+                    gameBoard.arr[0, 2] == CellState.X &&
+                    gameBoard.arr[2, 2] == CellState.X &&
+                    gameBoard.arr[3, 2] == CellState.X &&
+                    gameBoard.arr[4, 2] == CellState.X)
                 {
                     gameBoard.arr[1, 2] = CellState.O;
                     lastXCPU = 1;
@@ -769,10 +799,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 2] == CellState.X &&   //(2,2)
-               gameBoard.arr[1, 2] == CellState.X &&
-               gameBoard.arr[3, 2] == CellState.X &&
-               gameBoard.arr[4, 2] == CellState.X)
+                if (gameBoard.arr[2, 2] == CellState.Empty && //(2,2)
+                    gameBoard.arr[0, 2] == CellState.X &&
+                    gameBoard.arr[1, 2] == CellState.X &&
+                    gameBoard.arr[3, 2] == CellState.X &&
+                    gameBoard.arr[4, 2] == CellState.X)
                 {
                     gameBoard.arr[2, 2] = CellState.O;
                     lastXCPU = 2;
@@ -787,10 +818,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 2] == CellState.X &&   //(4,2)
-               gameBoard.arr[1, 2] == CellState.X &&
-               gameBoard.arr[2, 2] == CellState.X &&
-               gameBoard.arr[3, 2] == CellState.X)
+                if (gameBoard.arr[4, 2] == CellState.Empty && //(4,2)
+                    gameBoard.arr[0, 2] == CellState.X &&
+                    gameBoard.arr[1, 2] == CellState.X &&
+                    gameBoard.arr[2, 2] == CellState.X &&
+                    gameBoard.arr[3, 2] == CellState.X)
                 {
                     gameBoard.arr[4, 2] = CellState.O;
                     lastXCPU = 4;
@@ -805,28 +837,13 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 2] == CellState.X &&   //(4,2)
-               gameBoard.arr[1, 2] == CellState.X &&
-               gameBoard.arr[2, 2] == CellState.X &&
-               gameBoard.arr[3, 2] == CellState.X)
-                {
-                    gameBoard.arr[4, 2] = CellState.O;
-                    lastXCPU = 4;
-                    lastYCPU = 2;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                    {
-                        EndGame();
-                        SetScore();
-                    }
-                }
-                else
 
-                if (gameBoard.arr[1, 3] == CellState.X &&   //(0,3)
-               gameBoard.arr[2, 3] == CellState.X &&
-               gameBoard.arr[3, 3] == CellState.X &&
-               gameBoard.arr[4, 3] == CellState.X)
+
+                if (gameBoard.arr[0, 3] == CellState.Empty && //(0,3)
+                    gameBoard.arr[1, 3] == CellState.X &&
+                    gameBoard.arr[2, 3] == CellState.X &&
+                    gameBoard.arr[3, 3] == CellState.X &&
+                    gameBoard.arr[4, 3] == CellState.X)
                 {
                     gameBoard.arr[0, 3] = CellState.O;
                     lastXCPU = 0;
@@ -841,10 +858,11 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 3] == CellState.X &&   //(1,3)
-               gameBoard.arr[2, 3] == CellState.X &&
-               gameBoard.arr[3, 3] == CellState.X &&
-               gameBoard.arr[4, 3] == CellState.X)
+                if (gameBoard.arr[1, 3] == CellState.Empty && //(1,3)
+                    gameBoard.arr[0, 3] == CellState.X &&
+                    gameBoard.arr[2, 3] == CellState.X &&
+                    gameBoard.arr[3, 3] == CellState.X &&
+                    gameBoard.arr[4, 3] == CellState.X)
                 {
                     gameBoard.arr[1, 3] = CellState.O;
                     lastXCPU = 1;
@@ -859,7 +877,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 3] == CellState.X &&   //(2,3)
+                if (gameBoard.arr[2, 3] == CellState.Empty && //(2,3)
+                    gameBoard.arr[0, 3] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 3] == CellState.X)
@@ -877,7 +896,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 3] == CellState.X &&   //(4,3)
+                if (gameBoard.arr[4, 3] == CellState.Empty && //(4,3)
+                    gameBoard.arr[0, 3] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[2, 3] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X)
@@ -895,7 +915,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 4] == CellState.X &&   //(0,4)
+                if (gameBoard.arr[0, 4] == CellState.Empty &&  //(0,4)
+                    gameBoard.arr[1, 4] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
@@ -913,7 +934,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 4] == CellState.X &&   //(1,4)
+                if (gameBoard.arr[1, 4] == CellState.Empty && //(1,4)
+                    gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
@@ -931,7 +953,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 4] == CellState.X &&   //(2,4)
+                if (gameBoard.arr[2, 4] == CellState.Empty && //(2,4)
+                    gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
@@ -949,7 +972,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 4] == CellState.X &&   //(4,4)
+                if (gameBoard.arr[4, 4] == CellState.Empty &&  //(4,4)
+                    gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 4] == CellState.X &&
                     gameBoard.arr[2, 4] == CellState.X &&
                     gameBoard.arr[3, 4] == CellState.X)
@@ -969,7 +993,8 @@ namespace TicTacToeLibrary
 
                 else
 
-                if (gameBoard.arr[1, 1] == CellState.X &&   //(0,0) ukos\
+                if (gameBoard.arr[0, 0] == CellState.Empty && //(0,0) ukos\
+                    gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
@@ -987,7 +1012,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(1,1) ukos\
+                if (gameBoard.arr[1, 1] == CellState.Empty && //(1,1) ukos\
+                    gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
@@ -1005,7 +1031,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(2,2) ukos\
+                if (gameBoard.arr[2, 2] == CellState.Empty && //(2,2) ukos\
+                    gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X &&
                     gameBoard.arr[4, 4] == CellState.X)
@@ -1023,7 +1050,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 0] == CellState.X &&   //(4,4) ukos\
+                if (gameBoard.arr[4, 4] == CellState.Empty && //(4,4) ukos\
+                    gameBoard.arr[0, 0] == CellState.X &&
                     gameBoard.arr[1, 1] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 3] == CellState.X)
@@ -1041,7 +1069,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[1, 3] == CellState.X &&   //(0,4) ukos/
+                if (gameBoard.arr[0, 4] == CellState.Empty && //(0,4) ukos/
+                    gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
@@ -1059,7 +1088,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 4] == CellState.X &&   //(1,3) ukos/
+                if (gameBoard.arr[1, 3] == CellState.Empty && //(1,3) ukos/
+                    gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
@@ -1077,7 +1107,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 4] == CellState.X &&   //(2,2) ukos/
+                if (gameBoard.arr[2, 2] == CellState.Empty &&  //(2,2) ukos/
+                    gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X &&
                     gameBoard.arr[4, 0] == CellState.X)
@@ -1095,7 +1126,8 @@ namespace TicTacToeLibrary
                 }
                 else
 
-                if (gameBoard.arr[0, 4] == CellState.X &&   //(4,0) ukos/
+                if (gameBoard.arr[4, 0] == CellState.Empty && //(4,0) ukos/
+                    gameBoard.arr[0, 4] == CellState.X &&
                     gameBoard.arr[1, 3] == CellState.X &&
                     gameBoard.arr[2, 2] == CellState.X &&
                     gameBoard.arr[3, 1] == CellState.X)
@@ -1111,19 +1143,50 @@ namespace TicTacToeLibrary
                         SetScore();
                     }
                 }
+                else
+                //=======Ruchy PCU=======
+
+
+
+                    // TO DO
+                    //if (gameBoard.arr[3, 0] == CellState.Empty&&
+                    //    gameBoard.arr[0, 0] == CellState.Empty &&
+                    //       gameBoard.arr[0, 1] == CellState.Empty &&
+                    //       gameBoard.arr[0, 2] == CellState.Empty &&
+                    //       gameBoard.arr[0, 3] == CellState.Empty &&
+                    //       gameBoard.arr[0, 4] == CellState.Empty)
+                    //    {
+                    //        gameBoard.arr[1, 3] = CellState.O;
+                    //        lastXCPU = 1;
+                    //        lastYCPU = 3;
+                //if (CheckDraw())
+                //    EndGame();
+                //if (CheckForLine())
+                //{
+                //    EndGame();
+                //    SetScore();
+                //}
+                //}
 
 
 
 
 
+                // ok
+                if (gameBoard.arr[0, 0] == CellState.X) // jesli x = 0 i y = 0 jest puste to... 
+                {
+                    gameBoard.arr[3, 0] = CellState.O;
+                    lastXCPU = 3;     // Las
+                    lastYCPU = 0;
 
-
-
-
-
-
-
-
+                    if (CheckDraw())
+                        EndGame();
+                    if (CheckForLine())
+                    {
+                        EndGame();
+                        SetScore();
+                    }
+                }
 
 
 
