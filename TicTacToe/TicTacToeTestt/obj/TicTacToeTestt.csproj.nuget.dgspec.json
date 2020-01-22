@@ -1,31 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj": {}
+    "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj": {}
   },
   "projects": {
-    "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj": {
+    "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj",
         "projectName": "TicTacToeLibrary",
-        "projectPath": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj"
+        "projectPath": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj"
       },
       "frameworks": {
         "net461": {}
       }
     },
-    "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj": {
+    "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj",
+        "projectUniqueName": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj",
         "projectName": "TicTacToeTestt",
-        "projectPath": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj",
-        "packagesPath": "C:\\Users\\sanov\\.nuget\\packages\\",
-        "outputPath": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeTestt\\obj\\",
+        "projectPath": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeTestt\\TicTacToeTestt.csproj",
+        "packagesPath": "C:\\Users\\Admin.000\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeTestt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,11 +38,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj": {
-                "projectPath": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj"
+              "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj": {
+                "projectPath": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj"
               },
-              "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-                "projectPath": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+              "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+                "projectPath": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
               }
             }
           }
@@ -55,24 +55,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "MSTest.TestAdapter": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
-            "MSTest.TestFramework": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.2.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -83,26 +65,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+    "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
         "projectName": "TicTacToe",
-        "projectPath": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "projectPath": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj": {
-                "projectPath": "D:\\TiCtacToe Projekt\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj"
+              "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj": {
+                "projectPath": "C:\\Users\\Admin.000\\Documents\\GitHub\\Tic-Tac-Toe-WPF\\TicTacToe\\TicTacToeLibrary\\TicTacToeLibrary.csproj"
               }
             }
           }
