@@ -197,14 +197,34 @@ namespace TicTacToeLibrary
             else
                 p2Score++;
         }
+        /// <summary>
+        /// If CPU cannot do otherwise it sets O on random place in game array
+        /// </summary>
+        private void SetBlockCPURandom()
+        {
+            int x = rnd.Next(0, 5);
+            int y = rnd.Next(0, 5);
+            if (gameBoard.arr[x, y] == CellState.Empty)
+            {
 
+                gameBoard.arr[x, y] = CellState.O;
+                lastXCPU = x;
+                lastYCPU = y;
+                if (CheckDraw())
+                    EndGame();
+                if (CheckForLine())
+                {
+                    EndGame();
+                    SetScore();
+                }
+            }
+            else
+            {
 
-
-
-
-
-
-
+                SetBlockCPURandom();
+            }
+        }
+       
 
         /// <summary>
         /// Method setting block by CPU.
@@ -669,29 +689,6 @@ namespace TicTacToeLibrary
             player1Turn = true;
 
         }
-        private void SetBlockCPURandom()
-        {
-            int x = rnd.Next(0, 5);
-            int y = rnd.Next(0, 5);
-            if (gameBoard.arr[x, y] == CellState.Empty)
-            {
-
-                gameBoard.arr[x, y] = CellState.O;
-                lastXCPU = x;
-                lastYCPU = y;
-                if (CheckDraw())
-                    EndGame();
-                if (CheckForLine())
-                {
-                    EndGame();
-                    SetScore();
-                }
-            }
-            else
-            {
-
-                SetBlockCPURandom();
-            }
-        }
+        
     }
 }
