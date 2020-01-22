@@ -109,7 +109,43 @@ namespace TicTacToeLibraryTest
                     }
                 }
 
+            }
 
+            [TestMethod]
+            public void SetBlockTest()
+            {
+                Game game = new Game();
+
+                game.gameBoard.arr[0, 1] = CellState.O;
+                if (game.gameBoard.arr[0, 1] != CellState.O)
+                    Assert.AreEqual(CellState.O, game.gameBoard.arr[0, 1], "Blad Wybierania Gracza Pola Nalozenie");
+
+
+
+
+            }
+            [TestMethod]
+            public void SetBlockCPUTest()
+            {
+                Game game = new Game();
+
+                game.gameBoard.arr[0, 1] = CellState.X;
+                game.gameBoard.arr[2, 1] = CellState.X;
+                game.gameBoard.arr[4, 1] = CellState.X;
+                game.gameBoard.arr[3, 2] = CellState.X;
+                game.gameBoard.arr[2, 4] = CellState.X;
+                game.gameBoard.arr[3, 3] = CellState.X;
+
+                if (game.player1Turn == false)
+                {
+                    Assert.AreEqual(CellState.X, game.gameBoard.arr[0, 1] == CellState.O, "Blad Wybierania Komputera Pola Nalozenie");
+                    Assert.AreEqual(CellState.X, game.gameBoard.arr[2, 1] == CellState.O, "Blad Wybierania Komputera Pola Nalozenie");
+                    Assert.AreEqual(CellState.X, game.gameBoard.arr[3, 1] == CellState.O, "Blad Wybierania Komputera Pola Nalozenie");
+                    Assert.AreEqual(CellState.X, game.gameBoard.arr[3, 2] == CellState.O, "Blad Wybierania Komputera Pola Nalozenie");
+                    Assert.AreEqual(CellState.X, game.gameBoard.arr[2, 4] == CellState.O, "Blad Wybierania Komputera Pola Nalozenie");
+                    Assert.AreEqual(CellState.X, game.gameBoard.arr[3, 3] == CellState.O, "Blad Wybierania Komputera Pola Nalozenie");
+
+                }
 
 
 

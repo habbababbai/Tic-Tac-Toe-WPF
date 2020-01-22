@@ -16,3 +16,21 @@ C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibraryTe
 C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibraryTests\obj\Debug\TicTacToeLibraryTests.csproj.CopyComplete
 C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibraryTests\obj\Debug\TicTacToeLibraryTests.dll
 C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibraryTests\obj\Debug\TicTacToeLibraryTests.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\TicTacToeLibraryTests.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\TicTacToeLibraryTests.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\TicTacToeLibrary.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\TicTacToeLibrary.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\obj\Debug\TicTacToeLibraryTests.csprojAssemblyReference.cache
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\obj\Debug\TicTacToeLibraryTests.csproj.CopyComplete
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\obj\Debug\TicTacToeLibraryTests.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibraryTests\obj\Debug\TicTacToeLibraryTests.pdb
