@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: TicTacToeLibrary
+  commentId: N:TicTacToeLibrary
+  id: TicTacToeLibrary
+  children:
+  - TicTacToeLibrary.Board
+  - TicTacToeLibrary.CellState
+  - TicTacToeLibrary.Game
+  langs:
+  - csharp
+  - vb
+  name: TicTacToeLibrary
+  nameWithType: TicTacToeLibrary
+  fullName: TicTacToeLibrary
+  type: Namespace
+  assemblies:
+  - TicTacToeLibrary
+references:
+- uid: TicTacToeLibrary.CellState
+  commentId: T:TicTacToeLibrary.CellState
+  parent: TicTacToeLibrary
+  name: CellState
+  nameWithType: CellState
+  fullName: TicTacToeLibrary.CellState
+- uid: TicTacToeLibrary.Board
+  commentId: T:TicTacToeLibrary.Board
+  parent: TicTacToeLibrary
+  name: Board
+  nameWithType: Board
+  fullName: TicTacToeLibrary.Board
+- uid: TicTacToeLibrary.Game
+  commentId: T:TicTacToeLibrary.Game
+  name: Game
+  nameWithType: Game
+  fullName: TicTacToeLibrary.Game
+- uid: TicTacToeLibrary
+  commentId: N:TicTacToeLibrary
+  name: TicTacToeLibrary
+  nameWithType: TicTacToeLibrary
+  fullName: TicTacToeLibrary

@@ -1,0 +1,428 @@
+### YamlMime:ManagedReference
+items:
+- uid: TicTacToeLibrary.Board
+  commentId: T:TicTacToeLibrary.Board
+  id: Board
+  parent: TicTacToeLibrary
+  children:
+  - TicTacToeLibrary.Board.#ctor
+  - TicTacToeLibrary.Board.arr
+  langs:
+  - csharp
+  - vb
+  name: Board
+  nameWithType: Board
+  fullName: TicTacToeLibrary.Board
+  type: Class
+  source:
+    id: Board
+    path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+    startLine: 25
+  assemblies:
+  - TicTacToeLibrary
+  namespace: TicTacToeLibrary
+  summary: "\nTwo dimensional board which hold information of player markers.\n"
+  example: []
+  syntax:
+    content: public class Board
+    content.vb: Public Class Board
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TicTacToeLibrary.Board.arr
+  commentId: F:TicTacToeLibrary.Board.arr
+  id: arr
+  parent: TicTacToeLibrary.Board
+  langs:
+  - csharp
+  - vb
+  name: arr
+  nameWithType: Board.arr
+  fullName: TicTacToeLibrary.Board.arr
+  type: Field
+  source:
+    id: arr
+    path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+    startLine: 30
+  assemblies:
+  - TicTacToeLibrary
+  namespace: TicTacToeLibrary
+  summary: "\nArray which hold every block of the game.\n"
+  example: []
+  syntax:
+    content: public CellState[, ] arr
+    return:
+      type: TicTacToeLibrary.CellState[,]
+    content.vb: Public arr As CellState(,)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TicTacToeLibrary.Board.#ctor
+  commentId: M:TicTacToeLibrary.Board.#ctor
+  id: '#ctor'
+  parent: TicTacToeLibrary.Board
+  langs:
+  - csharp
+  - vb
+  name: Board()
+  nameWithType: Board.Board()
+  fullName: TicTacToeLibrary.Board.Board()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+    startLine: 34
+  assemblies:
+  - TicTacToeLibrary
+  namespace: TicTacToeLibrary
+  summary: "\nConstructor for Board class, sets every block to empty.\n"
+  example: []
+  syntax:
+    content: public Board()
+    content.vb: Public Sub New
+  overload: TicTacToeLibrary.Board.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TicTacToeLibrary
+  commentId: N:TicTacToeLibrary
+  name: TicTacToeLibrary
+  nameWithType: TicTacToeLibrary
+  fullName: TicTacToeLibrary
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TicTacToeLibrary.CellState[,]
+  isExternal: true
+  name: CellState[,]
+  nameWithType: CellState[,]
+  fullName: TicTacToeLibrary.CellState[,]
+  nameWithType.vb: CellState(,)
+  fullName.vb: TicTacToeLibrary.CellState(,)
+  name.vb: CellState(,)
+  spec.csharp:
+  - uid: TicTacToeLibrary.CellState
+    name: CellState
+    nameWithType: CellState
+    fullName: TicTacToeLibrary.CellState
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: TicTacToeLibrary.CellState
+    name: CellState
+    nameWithType: CellState
+    fullName: TicTacToeLibrary.CellState
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: TicTacToeLibrary.Board.#ctor*
+  commentId: Overload:TicTacToeLibrary.Board.#ctor
+  name: Board
+  nameWithType: Board.Board
+  fullName: TicTacToeLibrary.Board.Board

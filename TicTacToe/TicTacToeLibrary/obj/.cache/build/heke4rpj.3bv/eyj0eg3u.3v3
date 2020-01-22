@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Game
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Game
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TicTacToeLibrary.Game">
+  
+  
+  <h1 id="TicTacToeLibrary_Game" data-uid="TicTacToeLibrary.Game" class="text-break">Class Game
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Class maintaining game logic.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Game</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TicTacToeLibrary.html">TicTacToeLibrary</a></h6>
+  <h6><strong>Assembly</strong>: TicTacToeLibrary.dll</h6>
+  <h5 id="TicTacToeLibrary_Game_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Game</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TicTacToeLibrary_Game__ctor_" data-uid="TicTacToeLibrary.Game.#ctor*"></a>
+  <h4 id="TicTacToeLibrary_Game__ctor" data-uid="TicTacToeLibrary.Game.#ctor">Game()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Constructor for Game class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Game()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="TicTacToeLibrary_Game_rnd" data-uid="TicTacToeLibrary.Game.rnd">rnd</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">CPU add block on random position if cannot do otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Random rnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="TicTacToeLibrary_Game_gameBoard_" data-uid="TicTacToeLibrary.Game.gameBoard*"></a>
+  <h4 id="TicTacToeLibrary_Game_gameBoard" data-uid="TicTacToeLibrary.Game.gameBoard">gameBoard</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">gameBoard is object that holds information of every game block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Board gameBoard { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TicTacToeLibrary.Board.html">Board</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_isOver_" data-uid="TicTacToeLibrary.Game.isOver*"></a>
+  <h4 id="TicTacToeLibrary_Game_isOver" data-uid="TicTacToeLibrary.Game.isOver">isOver</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">isOver checks if game is over.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isOver { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_lastXCPU_" data-uid="TicTacToeLibrary.Game.lastXCPU*"></a>
+  <h4 id="TicTacToeLibrary_Game_lastXCPU" data-uid="TicTacToeLibrary.Game.lastXCPU">lastXCPU</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Last row on which cpu set its block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int lastXCPU { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_lastYCPU_" data-uid="TicTacToeLibrary.Game.lastYCPU*"></a>
+  <h4 id="TicTacToeLibrary_Game_lastYCPU" data-uid="TicTacToeLibrary.Game.lastYCPU">lastYCPU</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Last column on which cpu set its block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int lastYCPU { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_p1Score_" data-uid="TicTacToeLibrary.Game.p1Score*"></a>
+  <h4 id="TicTacToeLibrary_Game_p1Score" data-uid="TicTacToeLibrary.Game.p1Score">p1Score</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Score of player one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int p1Score { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_p2Score_" data-uid="TicTacToeLibrary.Game.p2Score*"></a>
+  <h4 id="TicTacToeLibrary_Game_p2Score" data-uid="TicTacToeLibrary.Game.p2Score">p2Score</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Score of player2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int p2Score { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_player1Turn_" data-uid="TicTacToeLibrary.Game.player1Turn*"></a>
+  <h4 id="TicTacToeLibrary_Game_player1Turn" data-uid="TicTacToeLibrary.Game.player1Turn">player1Turn</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">player1Turn checks which player turn it is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool player1Turn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TicTacToeLibrary_Game_CheckDiagonal_" data-uid="TicTacToeLibrary.Game.CheckDiagonal*"></a>
+  <h4 id="TicTacToeLibrary_Game_CheckDiagonal" data-uid="TicTacToeLibrary.Game.CheckDiagonal">CheckDiagonal()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method checks for diagonal line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckDiagonal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Returns true if there is diagonal line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_CheckDraw_" data-uid="TicTacToeLibrary.Game.CheckDraw*"></a>
+  <h4 id="TicTacToeLibrary_Game_CheckDraw" data-uid="TicTacToeLibrary.Game.CheckDraw">CheckDraw()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method checks if every block is set as X or O.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckDraw()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Return true if all block are either X or O and none player won.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_CheckForLine_" data-uid="TicTacToeLibrary.Game.CheckForLine*"></a>
+  <h4 id="TicTacToeLibrary_Game_CheckForLine" data-uid="TicTacToeLibrary.Game.CheckForLine">CheckForLine()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method checks for line of same blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckForLine()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_CheckHorizontal_" data-uid="TicTacToeLibrary.Game.CheckHorizontal*"></a>
+  <h4 id="TicTacToeLibrary_Game_CheckHorizontal" data-uid="TicTacToeLibrary.Game.CheckHorizontal">CheckHorizontal()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method checks for horizontal line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckHorizontal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Returns true if there is horizontal line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_CheckVertical_" data-uid="TicTacToeLibrary.Game.CheckVertical*"></a>
+  <h4 id="TicTacToeLibrary_Game_CheckVertical" data-uid="TicTacToeLibrary.Game.CheckVertical">CheckVertical()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method checks for vertical line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckVertical()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Return true if there is a vertical line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_EndGame_" data-uid="TicTacToeLibrary.Game.EndGame*"></a>
+  <h4 id="TicTacToeLibrary_Game_EndGame" data-uid="TicTacToeLibrary.Game.EndGame">EndGame()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method ends game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndGame()</code></pre>
+  </div>
+  
+  
+  <a id="TicTacToeLibrary_Game_Reset_" data-uid="TicTacToeLibrary.Game.Reset*"></a>
+  <h4 id="TicTacToeLibrary_Game_Reset" data-uid="TicTacToeLibrary.Game.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method resets gameBoard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  
+  
+  <a id="TicTacToeLibrary_Game_SetBlock_" data-uid="TicTacToeLibrary.Game.SetBlock*"></a>
+  <h4 id="TicTacToeLibrary_Game_SetBlock_System_Int32_System_Int32_" data-uid="TicTacToeLibrary.Game.SetBlock(System.Int32,System.Int32)">SetBlock(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method allowing to change specific block state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlock(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Row of block next to change.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Column of block next to change</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_SetBlockCPU_" data-uid="TicTacToeLibrary.Game.SetBlockCPU*"></a>
+  <h4 id="TicTacToeLibrary_Game_SetBlockCPU" data-uid="TicTacToeLibrary.Game.SetBlockCPU">SetBlockCPU()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method setting block by CPU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlockCPU()</code></pre>
+  </div>
+  
+  
+  <a id="TicTacToeLibrary_Game_SetBlockCPUDiagonal_" data-uid="TicTacToeLibrary.Game.SetBlockCPUDiagonal*"></a>
+  <h4 id="TicTacToeLibrary_Game_SetBlockCPUDiagonal" data-uid="TicTacToeLibrary.Game.SetBlockCPUDiagonal">SetBlockCPUDiagonal()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Checks if CPU should block players winning line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetBlockCPUDiagonal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Return true if blocked player from winning</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_SetBlockCPUHorizontal_" data-uid="TicTacToeLibrary.Game.SetBlockCPUHorizontal*"></a>
+  <h4 id="TicTacToeLibrary_Game_SetBlockCPUHorizontal" data-uid="TicTacToeLibrary.Game.SetBlockCPUHorizontal">SetBlockCPUHorizontal()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Check if CPU should block players horizontal line for win.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetBlockCPUHorizontal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Return true if CPU blocked player from winning.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_SetBlockCPURandom_" data-uid="TicTacToeLibrary.Game.SetBlockCPURandom*"></a>
+  <h4 id="TicTacToeLibrary_Game_SetBlockCPURandom" data-uid="TicTacToeLibrary.Game.SetBlockCPURandom">SetBlockCPURandom()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">If CPU cannot do otherwise it sets O on random place in game array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlockCPURandom()</code></pre>
+  </div>
+  
+  
+  <a id="TicTacToeLibrary_Game_SetBlockCPUVertical_" data-uid="TicTacToeLibrary.Game.SetBlockCPUVertical*"></a>
+  <h4 id="TicTacToeLibrary_Game_SetBlockCPUVertical" data-uid="TicTacToeLibrary.Game.SetBlockCPUVertical">SetBlockCPUVertical()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Checks if CPU should block players vertical winning line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetBlockCPUVertical()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Return true if blocked player from winning.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TicTacToeLibrary_Game_SetScore_" data-uid="TicTacToeLibrary.Game.SetScore*"></a>
+  <h4 id="TicTacToeLibrary_Game_SetScore" data-uid="TicTacToeLibrary.Game.SetScore">SetScore()</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/TicTacToeLibrary.Game.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Method sets scores for players.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScore()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

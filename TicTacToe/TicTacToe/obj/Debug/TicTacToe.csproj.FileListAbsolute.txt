@@ -113,3 +113,4 @@ D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateReso
 D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.CopyComplete
 D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.xml

@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: TicTacToeLibrary.CellState
+  commentId: T:TicTacToeLibrary.CellState
+  id: CellState
+  parent: TicTacToeLibrary
+  children:
+  - TicTacToeLibrary.CellState.Empty
+  - TicTacToeLibrary.CellState.O
+  - TicTacToeLibrary.CellState.X
+  langs:
+  - csharp
+  - vb
+  name: CellState
+  nameWithType: CellState
+  fullName: TicTacToeLibrary.CellState
+  type: Enum
+  source:
+    id: CellState
+    path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+    startLine: 7
+  assemblies:
+  - TicTacToeLibrary
+  namespace: TicTacToeLibrary
+  summary: "\nCellState enum is state of every game block.\n"
+  example: []
+  syntax:
+    content: public enum CellState
+    content.vb: Public Enum CellState
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TicTacToeLibrary.CellState.Empty
+  commentId: F:TicTacToeLibrary.CellState.Empty
+  id: Empty
+  parent: TicTacToeLibrary.CellState
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: CellState.Empty
+  fullName: TicTacToeLibrary.CellState.Empty
+  type: Field
+  source:
+    id: Empty
+    path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+    startLine: 12
+  assemblies:
+  - TicTacToeLibrary
+  namespace: TicTacToeLibrary
+  summary: "\nState of block is empty.\n"
+  example: []
+  syntax:
+    content: Empty = 0
+    return:
+      type: TicTacToeLibrary.CellState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TicTacToeLibrary.CellState.X
+  commentId: F:TicTacToeLibrary.CellState.X
+  id: X
+  parent: TicTacToeLibrary.CellState
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: CellState.X
+  fullName: TicTacToeLibrary.CellState.X
+  type: Field
+  source:
+    id: X
+    path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+    startLine: 16
+  assemblies:
+  - TicTacToeLibrary
+  namespace: TicTacToeLibrary
+  summary: "\nBlock is occupied by X.\n"
+  example: []
+  syntax:
+    content: X = 1
+    return:
+      type: TicTacToeLibrary.CellState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TicTacToeLibrary.CellState.O
+  commentId: F:TicTacToeLibrary.CellState.O
+  id: O
+  parent: TicTacToeLibrary.CellState
+  langs:
+  - csharp
+  - vb
+  name: O
+  nameWithType: CellState.O
+  fullName: TicTacToeLibrary.CellState.O
+  type: Field
+  source:
+    id: O
+    path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+    startLine: 20
+  assemblies:
+  - TicTacToeLibrary
+  namespace: TicTacToeLibrary
+  summary: "\nBlock is occupied by O.\n"
+  example: []
+  syntax:
+    content: O = 2
+    return:
+      type: TicTacToeLibrary.CellState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TicTacToeLibrary
+  commentId: N:TicTacToeLibrary
+  name: TicTacToeLibrary
+  nameWithType: TicTacToeLibrary
+  fullName: TicTacToeLibrary
+- uid: TicTacToeLibrary.CellState
+  commentId: T:TicTacToeLibrary.CellState
+  parent: TicTacToeLibrary
+  name: CellState
+  nameWithType: CellState
+  fullName: TicTacToeLibrary.CellState

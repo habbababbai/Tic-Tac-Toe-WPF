@@ -1,0 +1,1855 @@
+id: TicTacToeLibrary
+language: CSharp
+name:
+  Default: TicTacToeLibrary
+qualifiedName:
+  Default: TicTacToeLibrary
+type: Assembly
+modifiers: {}
+items:
+- id: TicTacToeLibrary
+  commentId: N:TicTacToeLibrary
+  language: CSharp
+  name:
+    CSharp: TicTacToeLibrary
+    VB: TicTacToeLibrary
+  nameWithType:
+    CSharp: TicTacToeLibrary
+    VB: TicTacToeLibrary
+  qualifiedName:
+    CSharp: TicTacToeLibrary
+    VB: TicTacToeLibrary
+  type: Namespace
+  assemblies:
+  - TicTacToeLibrary
+  modifiers: {}
+  items:
+  - id: TicTacToeLibrary.CellState
+    commentId: T:TicTacToeLibrary.CellState
+    language: CSharp
+    name:
+      CSharp: CellState
+      VB: CellState
+    nameWithType:
+      CSharp: CellState
+      VB: CellState
+    qualifiedName:
+      CSharp: TicTacToeLibrary.CellState
+      VB: TicTacToeLibrary.CellState
+    type: Enum
+    assemblies:
+    - TicTacToeLibrary
+    namespace: TicTacToeLibrary
+    source:
+      id: CellState
+      path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+      startLine: 7
+    summary: "\nCellState enum is state of every game block.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public enum CellState
+        VB: Public Enum CellState
+    modifiers:
+      CSharp:
+      - public
+      - enum
+      VB:
+      - Public
+      - Enum
+    items:
+    - id: TicTacToeLibrary.CellState.Empty
+      commentId: F:TicTacToeLibrary.CellState.Empty
+      language: CSharp
+      name:
+        CSharp: Empty
+        VB: Empty
+      nameWithType:
+        CSharp: CellState.Empty
+        VB: CellState.Empty
+      qualifiedName:
+        CSharp: TicTacToeLibrary.CellState.Empty
+        VB: TicTacToeLibrary.CellState.Empty
+      type: Field
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: Empty
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+        startLine: 9
+      syntax:
+        content:
+          CSharp: Empty = 0
+          VB: Empty = 0
+        return:
+          type: TicTacToeLibrary.CellState
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+    - id: TicTacToeLibrary.CellState.X
+      commentId: F:TicTacToeLibrary.CellState.X
+      language: CSharp
+      name:
+        CSharp: X
+        VB: X
+      nameWithType:
+        CSharp: CellState.X
+        VB: CellState.X
+      qualifiedName:
+        CSharp: TicTacToeLibrary.CellState.X
+        VB: TicTacToeLibrary.CellState.X
+      type: Field
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: X
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: X = 1
+          VB: X = 1
+        return:
+          type: TicTacToeLibrary.CellState
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+    - id: TicTacToeLibrary.CellState.O
+      commentId: F:TicTacToeLibrary.CellState.O
+      language: CSharp
+      name:
+        CSharp: O
+        VB: O
+      nameWithType:
+        CSharp: CellState.O
+        VB: CellState.O
+      qualifiedName:
+        CSharp: TicTacToeLibrary.CellState.O
+        VB: TicTacToeLibrary.CellState.O
+      type: Field
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: O
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+        startLine: 11
+      syntax:
+        content:
+          CSharp: O = 2
+          VB: O = 2
+        return:
+          type: TicTacToeLibrary.CellState
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+  - id: TicTacToeLibrary.Board
+    commentId: T:TicTacToeLibrary.Board
+    language: CSharp
+    name:
+      CSharp: Board
+      VB: Board
+    nameWithType:
+      CSharp: Board
+      VB: Board
+    qualifiedName:
+      CSharp: TicTacToeLibrary.Board
+      VB: TicTacToeLibrary.Board
+    type: Class
+    assemblies:
+    - TicTacToeLibrary
+    namespace: TicTacToeLibrary
+    source:
+      id: Board
+      path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+      startLine: 16
+    summary: "\nTwo dimensional board which hold information of player markers.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public class Board
+        VB: Public Class Board
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: TicTacToeLibrary.Board.arr
+      commentId: F:TicTacToeLibrary.Board.arr
+      language: CSharp
+      name:
+        CSharp: arr
+        VB: arr
+      nameWithType:
+        CSharp: Board.arr
+        VB: Board.arr
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Board.arr
+        VB: TicTacToeLibrary.Board.arr
+      type: Field
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: arr
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+        startLine: 19
+      syntax:
+        content:
+          CSharp: public CellState[, ] arr
+          VB: Public arr As CellState(,)
+        return:
+          type: TicTacToeLibrary.CellState[,]
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Board.#ctor
+      commentId: M:TicTacToeLibrary.Board.#ctor
+      language: CSharp
+      name:
+        CSharp: Board()
+        VB: Board()
+      nameWithType:
+        CSharp: Board.Board()
+        VB: Board.Board()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Board.Board()
+        VB: TicTacToeLibrary.Board.Board()
+      type: Constructor
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: .ctor
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Board.cs
+        startLine: 23
+      summary: "\nConstructor for Board class, sets every block to empty.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Board()
+          VB: Public Sub New
+      overload: TicTacToeLibrary.Board.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: TicTacToeLibrary.Game
+    commentId: T:TicTacToeLibrary.Game
+    language: CSharp
+    name:
+      CSharp: Game
+      VB: Game
+    nameWithType:
+      CSharp: Game
+      VB: Game
+    qualifiedName:
+      CSharp: TicTacToeLibrary.Game
+      VB: TicTacToeLibrary.Game
+    type: Class
+    assemblies:
+    - TicTacToeLibrary
+    namespace: TicTacToeLibrary
+    source:
+      id: Game
+      path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+      startLine: 8
+    summary: "\nClass maintaining game logic.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public class Game
+        VB: Public Class Game
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: TicTacToeLibrary.Game.player1Turn
+      commentId: P:TicTacToeLibrary.Game.player1Turn
+      language: CSharp
+      name:
+        CSharp: player1Turn
+        VB: player1Turn
+      nameWithType:
+        CSharp: Game.player1Turn
+        VB: Game.player1Turn
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.player1Turn
+        VB: TicTacToeLibrary.Game.player1Turn
+      type: Property
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: player1Turn
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 13
+      summary: "\nplayer1Turn checks which player turn it is.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool player1Turn { get; }
+          VB: Public ReadOnly Property player1Turn As Boolean
+        parameters: []
+        return:
+          type: System.Boolean
+      overload: TicTacToeLibrary.Game.player1Turn*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: TicTacToeLibrary.Game.gameBoard
+      commentId: P:TicTacToeLibrary.Game.gameBoard
+      language: CSharp
+      name:
+        CSharp: gameBoard
+        VB: gameBoard
+      nameWithType:
+        CSharp: Game.gameBoard
+        VB: Game.gameBoard
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.gameBoard
+        VB: TicTacToeLibrary.Game.gameBoard
+      type: Property
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: gameBoard
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 17
+      summary: "\ngameBoard is object that holds information of every game block.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Board gameBoard { get; }
+          VB: Public ReadOnly Property gameBoard As Board
+        parameters: []
+        return:
+          type: TicTacToeLibrary.Board
+      overload: TicTacToeLibrary.Game.gameBoard*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: TicTacToeLibrary.Game.isOver
+      commentId: P:TicTacToeLibrary.Game.isOver
+      language: CSharp
+      name:
+        CSharp: isOver
+        VB: isOver
+      nameWithType:
+        CSharp: Game.isOver
+        VB: Game.isOver
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.isOver
+        VB: TicTacToeLibrary.Game.isOver
+      type: Property
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: isOver
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 21
+      summary: "\nisOver checks if game is over.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool isOver { get; }
+          VB: Public ReadOnly Property isOver As Boolean
+        parameters: []
+        return:
+          type: System.Boolean
+      overload: TicTacToeLibrary.Game.isOver*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: TicTacToeLibrary.Game.p1Score
+      commentId: P:TicTacToeLibrary.Game.p1Score
+      language: CSharp
+      name:
+        CSharp: p1Score
+        VB: p1Score
+      nameWithType:
+        CSharp: Game.p1Score
+        VB: Game.p1Score
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.p1Score
+        VB: TicTacToeLibrary.Game.p1Score
+      type: Property
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: p1Score
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 25
+      summary: "\nScore of player one.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int p1Score { get; }
+          VB: Public ReadOnly Property p1Score As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: TicTacToeLibrary.Game.p1Score*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: TicTacToeLibrary.Game.p2Score
+      commentId: P:TicTacToeLibrary.Game.p2Score
+      language: CSharp
+      name:
+        CSharp: p2Score
+        VB: p2Score
+      nameWithType:
+        CSharp: Game.p2Score
+        VB: Game.p2Score
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.p2Score
+        VB: TicTacToeLibrary.Game.p2Score
+      type: Property
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: p2Score
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 29
+      summary: "\nScore of player2\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int p2Score { get; }
+          VB: Public ReadOnly Property p2Score As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: TicTacToeLibrary.Game.p2Score*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: TicTacToeLibrary.Game.lastXCPU
+      commentId: P:TicTacToeLibrary.Game.lastXCPU
+      language: CSharp
+      name:
+        CSharp: lastXCPU
+        VB: lastXCPU
+      nameWithType:
+        CSharp: Game.lastXCPU
+        VB: Game.lastXCPU
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.lastXCPU
+        VB: TicTacToeLibrary.Game.lastXCPU
+      type: Property
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: lastXCPU
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 33
+      summary: "\nLast row on which cpu set its block.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int lastXCPU { get; set; }
+          VB: Public Property lastXCPU As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: TicTacToeLibrary.Game.lastXCPU*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.lastYCPU
+      commentId: P:TicTacToeLibrary.Game.lastYCPU
+      language: CSharp
+      name:
+        CSharp: lastYCPU
+        VB: lastYCPU
+      nameWithType:
+        CSharp: Game.lastYCPU
+        VB: Game.lastYCPU
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.lastYCPU
+        VB: TicTacToeLibrary.Game.lastYCPU
+      type: Property
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: lastYCPU
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 38
+      summary: "\nLast column on which cpu set its block.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int lastYCPU { get; set; }
+          VB: Public Property lastYCPU As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: TicTacToeLibrary.Game.lastYCPU*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.rnd
+      commentId: F:TicTacToeLibrary.Game.rnd
+      language: CSharp
+      name:
+        CSharp: rnd
+        VB: rnd
+      nameWithType:
+        CSharp: Game.rnd
+        VB: Game.rnd
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.rnd
+        VB: TicTacToeLibrary.Game.rnd
+      type: Field
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: rnd
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 40
+      syntax:
+        content:
+          CSharp: public Random rnd
+          VB: Public rnd As Random
+        return:
+          type: System.Random
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.#ctor
+      commentId: M:TicTacToeLibrary.Game.#ctor
+      language: CSharp
+      name:
+        CSharp: Game()
+        VB: Game()
+      nameWithType:
+        CSharp: Game.Game()
+        VB: Game.Game()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.Game()
+        VB: TicTacToeLibrary.Game.Game()
+      type: Constructor
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: .ctor
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 45
+      summary: "\nConstructor for Game class.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Game()
+          VB: Public Sub New
+      overload: TicTacToeLibrary.Game.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.SetBlock(System.Int32,System.Int32)
+      commentId: M:TicTacToeLibrary.Game.SetBlock(System.Int32,System.Int32)
+      language: CSharp
+      name:
+        CSharp: SetBlock(Int32, Int32)
+        VB: SetBlock(Int32, Int32)
+      nameWithType:
+        CSharp: Game.SetBlock(Int32, Int32)
+        VB: Game.SetBlock(Int32, Int32)
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.SetBlock(System.Int32, System.Int32)
+        VB: TicTacToeLibrary.Game.SetBlock(System.Int32, System.Int32)
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: SetBlock
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 59
+      summary: "\nMethod allowing to change specific block state.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void SetBlock(int x, int y)
+          VB: Public Sub SetBlock(x As Integer, y As Integer)
+        parameters:
+        - id: x
+          type: System.Int32
+          description: Row of block next to change.
+        - id: y
+          type: System.Int32
+          description: Column of block next to change
+      overload: TicTacToeLibrary.Game.SetBlock*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.CheckForLine
+      commentId: M:TicTacToeLibrary.Game.CheckForLine
+      language: CSharp
+      name:
+        CSharp: CheckForLine()
+        VB: CheckForLine()
+      nameWithType:
+        CSharp: Game.CheckForLine()
+        VB: Game.CheckForLine()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.CheckForLine()
+        VB: TicTacToeLibrary.Game.CheckForLine()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: CheckForLine
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 87
+      summary: "\nMethod checks for line of same blocks.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool CheckForLine()
+          VB: Public Function CheckForLine As Boolean
+        return:
+          type: System.Boolean
+          description: ''
+      overload: TicTacToeLibrary.Game.CheckForLine*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.CheckVertical
+      commentId: M:TicTacToeLibrary.Game.CheckVertical
+      language: CSharp
+      name:
+        CSharp: CheckVertical()
+        VB: CheckVertical()
+      nameWithType:
+        CSharp: Game.CheckVertical()
+        VB: Game.CheckVertical()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.CheckVertical()
+        VB: TicTacToeLibrary.Game.CheckVertical()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: CheckVertical
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 97
+      summary: "\nMethod checks for vertical line.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool CheckVertical()
+          VB: Public Function CheckVertical As Boolean
+        return:
+          type: System.Boolean
+          description: Return true if there is a vertical line.
+      overload: TicTacToeLibrary.Game.CheckVertical*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.CheckHorizontal
+      commentId: M:TicTacToeLibrary.Game.CheckHorizontal
+      language: CSharp
+      name:
+        CSharp: CheckHorizontal()
+        VB: CheckHorizontal()
+      nameWithType:
+        CSharp: Game.CheckHorizontal()
+        VB: Game.CheckHorizontal()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.CheckHorizontal()
+        VB: TicTacToeLibrary.Game.CheckHorizontal()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: CheckHorizontal
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 114
+      summary: "\nMethod checks for horizontal line.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool CheckHorizontal()
+          VB: Public Function CheckHorizontal As Boolean
+        return:
+          type: System.Boolean
+          description: Returns true if there is horizontal line.
+      overload: TicTacToeLibrary.Game.CheckHorizontal*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.CheckDiagonal
+      commentId: M:TicTacToeLibrary.Game.CheckDiagonal
+      language: CSharp
+      name:
+        CSharp: CheckDiagonal()
+        VB: CheckDiagonal()
+      nameWithType:
+        CSharp: Game.CheckDiagonal()
+        VB: Game.CheckDiagonal()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.CheckDiagonal()
+        VB: TicTacToeLibrary.Game.CheckDiagonal()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: CheckDiagonal
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 131
+      summary: "\nMethod checks for diagonal line.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool CheckDiagonal()
+          VB: Public Function CheckDiagonal As Boolean
+        return:
+          type: System.Boolean
+          description: Returns true if there is diagonal line.
+      overload: TicTacToeLibrary.Game.CheckDiagonal*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.CheckDraw
+      commentId: M:TicTacToeLibrary.Game.CheckDraw
+      language: CSharp
+      name:
+        CSharp: CheckDraw()
+        VB: CheckDraw()
+      nameWithType:
+        CSharp: Game.CheckDraw()
+        VB: Game.CheckDraw()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.CheckDraw()
+        VB: TicTacToeLibrary.Game.CheckDraw()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: CheckDraw
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 151
+      summary: "\nMethod checks if every block is set as X or O.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool CheckDraw()
+          VB: Public Function CheckDraw As Boolean
+        return:
+          type: System.Boolean
+          description: Return true if all block are either X or O and none player won.
+      overload: TicTacToeLibrary.Game.CheckDraw*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.EndGame
+      commentId: M:TicTacToeLibrary.Game.EndGame
+      language: CSharp
+      name:
+        CSharp: EndGame()
+        VB: EndGame()
+      nameWithType:
+        CSharp: Game.EndGame()
+        VB: Game.EndGame()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.EndGame()
+        VB: TicTacToeLibrary.Game.EndGame()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: EndGame
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 170
+      summary: "\nMethod ends game.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void EndGame()
+          VB: Public Sub
+      overload: TicTacToeLibrary.Game.EndGame*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.Reset
+      commentId: M:TicTacToeLibrary.Game.Reset
+      language: CSharp
+      name:
+        CSharp: Reset()
+        VB: Reset()
+      nameWithType:
+        CSharp: Game.Reset()
+        VB: Game.Reset()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.Reset()
+        VB: TicTacToeLibrary.Game.Reset()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: Reset
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 177
+      summary: "\nMethod resets gameBoard.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Reset()
+          VB: Public Sub Reset
+      overload: TicTacToeLibrary.Game.Reset*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.SetScore
+      commentId: M:TicTacToeLibrary.Game.SetScore
+      language: CSharp
+      name:
+        CSharp: SetScore()
+        VB: SetScore()
+      nameWithType:
+        CSharp: Game.SetScore()
+        VB: Game.SetScore()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.SetScore()
+        VB: TicTacToeLibrary.Game.SetScore()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: SetScore
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 186
+      summary: "\nMethod sets scores for players.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void SetScore()
+          VB: Public Sub SetScore
+      overload: TicTacToeLibrary.Game.SetScore*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.SetBlockCPURandom
+      commentId: M:TicTacToeLibrary.Game.SetBlockCPURandom
+      language: CSharp
+      name:
+        CSharp: SetBlockCPURandom()
+        VB: SetBlockCPURandom()
+      nameWithType:
+        CSharp: Game.SetBlockCPURandom()
+        VB: Game.SetBlockCPURandom()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.SetBlockCPURandom()
+        VB: TicTacToeLibrary.Game.SetBlockCPURandom()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: SetBlockCPURandom
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 196
+      summary: "\nIf CPU cannot do otherwise it sets O on random place in game array\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void SetBlockCPURandom()
+          VB: Public Sub SetBlockCPURandom
+      overload: TicTacToeLibrary.Game.SetBlockCPURandom*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.SetBlockCPU
+      commentId: M:TicTacToeLibrary.Game.SetBlockCPU
+      language: CSharp
+      name:
+        CSharp: SetBlockCPU()
+        VB: SetBlockCPU()
+      nameWithType:
+        CSharp: Game.SetBlockCPU()
+        VB: Game.SetBlockCPU()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.SetBlockCPU()
+        VB: TicTacToeLibrary.Game.SetBlockCPU()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: SetBlockCPU
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 225
+      summary: "\nMethod setting block by CPU.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void SetBlockCPU()
+          VB: Public Sub SetBlockCPU
+      overload: TicTacToeLibrary.Game.SetBlockCPU*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.SetBlockCPUHorizontal
+      commentId: M:TicTacToeLibrary.Game.SetBlockCPUHorizontal
+      language: CSharp
+      name:
+        CSharp: SetBlockCPUHorizontal()
+        VB: SetBlockCPUHorizontal()
+      nameWithType:
+        CSharp: Game.SetBlockCPUHorizontal()
+        VB: Game.SetBlockCPUHorizontal()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.SetBlockCPUHorizontal()
+        VB: TicTacToeLibrary.Game.SetBlockCPUHorizontal()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: SetBlockCPUHorizontal
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 245
+      summary: "\nCheck if CPU should block players horizontal line for win.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool SetBlockCPUHorizontal()
+          VB: Public Function SetBlockCPUHorizontal As Boolean
+        return:
+          type: System.Boolean
+          description: Return true if CPU blocked player from winning.
+      overload: TicTacToeLibrary.Game.SetBlockCPUHorizontal*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.SetBlockCPUVertical
+      commentId: M:TicTacToeLibrary.Game.SetBlockCPUVertical
+      language: CSharp
+      name:
+        CSharp: SetBlockCPUVertical()
+        VB: SetBlockCPUVertical()
+      nameWithType:
+        CSharp: Game.SetBlockCPUVertical()
+        VB: Game.SetBlockCPUVertical()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.SetBlockCPUVertical()
+        VB: TicTacToeLibrary.Game.SetBlockCPUVertical()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: SetBlockCPUVertical
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 457
+      summary: "\nChecks if CPU should block players vertical winning line.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool SetBlockCPUVertical()
+          VB: Public Function SetBlockCPUVertical As Boolean
+        return:
+          type: System.Boolean
+          description: Return true if blocked player from winning.
+      overload: TicTacToeLibrary.Game.SetBlockCPUVertical*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: TicTacToeLibrary.Game.SetBlockCPUDiagonal
+      commentId: M:TicTacToeLibrary.Game.SetBlockCPUDiagonal
+      language: CSharp
+      name:
+        CSharp: SetBlockCPUDiagonal()
+        VB: SetBlockCPUDiagonal()
+      nameWithType:
+        CSharp: Game.SetBlockCPUDiagonal()
+        VB: Game.SetBlockCPUDiagonal()
+      qualifiedName:
+        CSharp: TicTacToeLibrary.Game.SetBlockCPUDiagonal()
+        VB: TicTacToeLibrary.Game.SetBlockCPUDiagonal()
+      type: Method
+      assemblies:
+      - TicTacToeLibrary
+      namespace: TicTacToeLibrary
+      source:
+        id: SetBlockCPUDiagonal
+        path: C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\Game.cs
+        startLine: 656
+      summary: "\nChecks if CPU should block players winning line.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public bool SetBlockCPUDiagonal()
+          VB: Public Function SetBlockCPUDiagonal As Boolean
+        return:
+          type: System.Boolean
+          description: Return true if blocked player from winning
+      overload: TicTacToeLibrary.Game.SetBlockCPUDiagonal*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+references:
+  TicTacToeLibrary:
+    name:
+      CSharp:
+      - name: TicTacToeLibrary
+        nameWithType: TicTacToeLibrary
+        qualifiedName: TicTacToeLibrary
+      VB:
+      - name: TicTacToeLibrary
+        nameWithType: TicTacToeLibrary
+        qualifiedName: TicTacToeLibrary
+    isDefinition: true
+    commentId: N:TicTacToeLibrary
+  TicTacToeLibrary.CellState:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.CellState
+        name: CellState
+        nameWithType: CellState
+        qualifiedName: TicTacToeLibrary.CellState
+      VB:
+      - id: TicTacToeLibrary.CellState
+        name: CellState
+        nameWithType: CellState
+        qualifiedName: TicTacToeLibrary.CellState
+    isDefinition: true
+    parent: TicTacToeLibrary
+    commentId: T:TicTacToeLibrary.CellState
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  TicTacToeLibrary.CellState[,]:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.CellState
+        name: CellState
+        nameWithType: CellState
+        qualifiedName: TicTacToeLibrary.CellState
+      - name: '[,]'
+        nameWithType: '[,]'
+        qualifiedName: '[,]'
+      VB:
+      - id: TicTacToeLibrary.CellState
+        name: CellState
+        nameWithType: CellState
+        qualifiedName: TicTacToeLibrary.CellState
+      - name: (,)
+        nameWithType: (,)
+        qualifiedName: (,)
+    isDefinition: false
+  TicTacToeLibrary.Board.#ctor*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Board.#ctor*
+        name: Board
+        nameWithType: Board.Board
+        qualifiedName: TicTacToeLibrary.Board.Board
+      VB:
+      - id: TicTacToeLibrary.Board.#ctor*
+        name: Board
+        nameWithType: Board.Board
+        qualifiedName: TicTacToeLibrary.Board.Board
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Board.#ctor
+  TicTacToeLibrary.Board:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Board
+        name: Board
+        nameWithType: Board
+        qualifiedName: TicTacToeLibrary.Board
+      VB:
+      - id: TicTacToeLibrary.Board
+        name: Board
+        nameWithType: Board
+        qualifiedName: TicTacToeLibrary.Board
+    isDefinition: true
+    parent: TicTacToeLibrary
+    commentId: T:TicTacToeLibrary.Board
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  TicTacToeLibrary.Game.player1Turn*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.player1Turn*
+        name: player1Turn
+        nameWithType: Game.player1Turn
+        qualifiedName: TicTacToeLibrary.Game.player1Turn
+      VB:
+      - id: TicTacToeLibrary.Game.player1Turn*
+        name: player1Turn
+        nameWithType: Game.player1Turn
+        qualifiedName: TicTacToeLibrary.Game.player1Turn
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.player1Turn
+  TicTacToeLibrary.Game.gameBoard*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.gameBoard*
+        name: gameBoard
+        nameWithType: Game.gameBoard
+        qualifiedName: TicTacToeLibrary.Game.gameBoard
+      VB:
+      - id: TicTacToeLibrary.Game.gameBoard*
+        name: gameBoard
+        nameWithType: Game.gameBoard
+        qualifiedName: TicTacToeLibrary.Game.gameBoard
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.gameBoard
+  TicTacToeLibrary.Game.isOver*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.isOver*
+        name: isOver
+        nameWithType: Game.isOver
+        qualifiedName: TicTacToeLibrary.Game.isOver
+      VB:
+      - id: TicTacToeLibrary.Game.isOver*
+        name: isOver
+        nameWithType: Game.isOver
+        qualifiedName: TicTacToeLibrary.Game.isOver
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.isOver
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  TicTacToeLibrary.Game.p1Score*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.p1Score*
+        name: p1Score
+        nameWithType: Game.p1Score
+        qualifiedName: TicTacToeLibrary.Game.p1Score
+      VB:
+      - id: TicTacToeLibrary.Game.p1Score*
+        name: p1Score
+        nameWithType: Game.p1Score
+        qualifiedName: TicTacToeLibrary.Game.p1Score
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.p1Score
+  TicTacToeLibrary.Game.p2Score*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.p2Score*
+        name: p2Score
+        nameWithType: Game.p2Score
+        qualifiedName: TicTacToeLibrary.Game.p2Score
+      VB:
+      - id: TicTacToeLibrary.Game.p2Score*
+        name: p2Score
+        nameWithType: Game.p2Score
+        qualifiedName: TicTacToeLibrary.Game.p2Score
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.p2Score
+  TicTacToeLibrary.Game.lastXCPU*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.lastXCPU*
+        name: lastXCPU
+        nameWithType: Game.lastXCPU
+        qualifiedName: TicTacToeLibrary.Game.lastXCPU
+      VB:
+      - id: TicTacToeLibrary.Game.lastXCPU*
+        name: lastXCPU
+        nameWithType: Game.lastXCPU
+        qualifiedName: TicTacToeLibrary.Game.lastXCPU
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.lastXCPU
+  TicTacToeLibrary.Game.lastYCPU*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.lastYCPU*
+        name: lastYCPU
+        nameWithType: Game.lastYCPU
+        qualifiedName: TicTacToeLibrary.Game.lastYCPU
+      VB:
+      - id: TicTacToeLibrary.Game.lastYCPU*
+        name: lastYCPU
+        nameWithType: Game.lastYCPU
+        qualifiedName: TicTacToeLibrary.Game.lastYCPU
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.lastYCPU
+  System.Random:
+    name:
+      CSharp:
+      - id: System.Random
+        name: Random
+        nameWithType: Random
+        qualifiedName: System.Random
+        isExternal: true
+      VB:
+      - id: System.Random
+        name: Random
+        nameWithType: Random
+        qualifiedName: System.Random
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Random
+  TicTacToeLibrary.Game.#ctor*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.#ctor*
+        name: Game
+        nameWithType: Game.Game
+        qualifiedName: TicTacToeLibrary.Game.Game
+      VB:
+      - id: TicTacToeLibrary.Game.#ctor*
+        name: Game
+        nameWithType: Game.Game
+        qualifiedName: TicTacToeLibrary.Game.Game
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.#ctor
+  TicTacToeLibrary.Game.SetBlock*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.SetBlock*
+        name: SetBlock
+        nameWithType: Game.SetBlock
+        qualifiedName: TicTacToeLibrary.Game.SetBlock
+      VB:
+      - id: TicTacToeLibrary.Game.SetBlock*
+        name: SetBlock
+        nameWithType: Game.SetBlock
+        qualifiedName: TicTacToeLibrary.Game.SetBlock
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.SetBlock
+  TicTacToeLibrary.Game.CheckForLine*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.CheckForLine*
+        name: CheckForLine
+        nameWithType: Game.CheckForLine
+        qualifiedName: TicTacToeLibrary.Game.CheckForLine
+      VB:
+      - id: TicTacToeLibrary.Game.CheckForLine*
+        name: CheckForLine
+        nameWithType: Game.CheckForLine
+        qualifiedName: TicTacToeLibrary.Game.CheckForLine
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.CheckForLine
+  TicTacToeLibrary.Game.CheckVertical*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.CheckVertical*
+        name: CheckVertical
+        nameWithType: Game.CheckVertical
+        qualifiedName: TicTacToeLibrary.Game.CheckVertical
+      VB:
+      - id: TicTacToeLibrary.Game.CheckVertical*
+        name: CheckVertical
+        nameWithType: Game.CheckVertical
+        qualifiedName: TicTacToeLibrary.Game.CheckVertical
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.CheckVertical
+  TicTacToeLibrary.Game.CheckHorizontal*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.CheckHorizontal*
+        name: CheckHorizontal
+        nameWithType: Game.CheckHorizontal
+        qualifiedName: TicTacToeLibrary.Game.CheckHorizontal
+      VB:
+      - id: TicTacToeLibrary.Game.CheckHorizontal*
+        name: CheckHorizontal
+        nameWithType: Game.CheckHorizontal
+        qualifiedName: TicTacToeLibrary.Game.CheckHorizontal
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.CheckHorizontal
+  TicTacToeLibrary.Game.CheckDiagonal*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.CheckDiagonal*
+        name: CheckDiagonal
+        nameWithType: Game.CheckDiagonal
+        qualifiedName: TicTacToeLibrary.Game.CheckDiagonal
+      VB:
+      - id: TicTacToeLibrary.Game.CheckDiagonal*
+        name: CheckDiagonal
+        nameWithType: Game.CheckDiagonal
+        qualifiedName: TicTacToeLibrary.Game.CheckDiagonal
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.CheckDiagonal
+  TicTacToeLibrary.Game.CheckDraw*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.CheckDraw*
+        name: CheckDraw
+        nameWithType: Game.CheckDraw
+        qualifiedName: TicTacToeLibrary.Game.CheckDraw
+      VB:
+      - id: TicTacToeLibrary.Game.CheckDraw*
+        name: CheckDraw
+        nameWithType: Game.CheckDraw
+        qualifiedName: TicTacToeLibrary.Game.CheckDraw
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.CheckDraw
+  TicTacToeLibrary.Game.EndGame*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.EndGame*
+        name: EndGame
+        nameWithType: Game.EndGame
+        qualifiedName: TicTacToeLibrary.Game.EndGame
+      VB:
+      - id: TicTacToeLibrary.Game.EndGame*
+        name: EndGame
+        nameWithType: Game.EndGame
+        qualifiedName: TicTacToeLibrary.Game.EndGame
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.EndGame
+  TicTacToeLibrary.Game.Reset*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.Reset*
+        name: Reset
+        nameWithType: Game.Reset
+        qualifiedName: TicTacToeLibrary.Game.Reset
+      VB:
+      - id: TicTacToeLibrary.Game.Reset*
+        name: Reset
+        nameWithType: Game.Reset
+        qualifiedName: TicTacToeLibrary.Game.Reset
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.Reset
+  TicTacToeLibrary.Game.SetScore*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.SetScore*
+        name: SetScore
+        nameWithType: Game.SetScore
+        qualifiedName: TicTacToeLibrary.Game.SetScore
+      VB:
+      - id: TicTacToeLibrary.Game.SetScore*
+        name: SetScore
+        nameWithType: Game.SetScore
+        qualifiedName: TicTacToeLibrary.Game.SetScore
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.SetScore
+  TicTacToeLibrary.Game.SetBlockCPURandom*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.SetBlockCPURandom*
+        name: SetBlockCPURandom
+        nameWithType: Game.SetBlockCPURandom
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPURandom
+      VB:
+      - id: TicTacToeLibrary.Game.SetBlockCPURandom*
+        name: SetBlockCPURandom
+        nameWithType: Game.SetBlockCPURandom
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPURandom
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.SetBlockCPURandom
+  TicTacToeLibrary.Game.SetBlockCPU*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.SetBlockCPU*
+        name: SetBlockCPU
+        nameWithType: Game.SetBlockCPU
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPU
+      VB:
+      - id: TicTacToeLibrary.Game.SetBlockCPU*
+        name: SetBlockCPU
+        nameWithType: Game.SetBlockCPU
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPU
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.SetBlockCPU
+  TicTacToeLibrary.Game.SetBlockCPUHorizontal*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.SetBlockCPUHorizontal*
+        name: SetBlockCPUHorizontal
+        nameWithType: Game.SetBlockCPUHorizontal
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPUHorizontal
+      VB:
+      - id: TicTacToeLibrary.Game.SetBlockCPUHorizontal*
+        name: SetBlockCPUHorizontal
+        nameWithType: Game.SetBlockCPUHorizontal
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPUHorizontal
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.SetBlockCPUHorizontal
+  TicTacToeLibrary.Game.SetBlockCPUVertical*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.SetBlockCPUVertical*
+        name: SetBlockCPUVertical
+        nameWithType: Game.SetBlockCPUVertical
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPUVertical
+      VB:
+      - id: TicTacToeLibrary.Game.SetBlockCPUVertical*
+        name: SetBlockCPUVertical
+        nameWithType: Game.SetBlockCPUVertical
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPUVertical
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.SetBlockCPUVertical
+  TicTacToeLibrary.Game.SetBlockCPUDiagonal*:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game.SetBlockCPUDiagonal*
+        name: SetBlockCPUDiagonal
+        nameWithType: Game.SetBlockCPUDiagonal
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPUDiagonal
+      VB:
+      - id: TicTacToeLibrary.Game.SetBlockCPUDiagonal*
+        name: SetBlockCPUDiagonal
+        nameWithType: Game.SetBlockCPUDiagonal
+        qualifiedName: TicTacToeLibrary.Game.SetBlockCPUDiagonal
+    isDefinition: true
+    commentId: Overload:TicTacToeLibrary.Game.SetBlockCPUDiagonal
+  TicTacToeLibrary.Game:
+    name:
+      CSharp:
+      - id: TicTacToeLibrary.Game
+        name: Game
+        nameWithType: Game
+        qualifiedName: TicTacToeLibrary.Game
+      VB:
+      - id: TicTacToeLibrary.Game
+        name: Game
+        nameWithType: Game
+        qualifiedName: TicTacToeLibrary.Game
+    isDefinition: true
+    commentId: T:TicTacToeLibrary.Game

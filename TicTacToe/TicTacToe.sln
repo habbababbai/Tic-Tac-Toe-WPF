@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeLibrary", "TicTacT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeLibraryTests", "TicTacToeLibraryTests\TicTacToeLibraryTests.csproj", "{32068EFF-7217-4EA6-9541-1CE1DD25A380}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{BC2C1505-F4DD-47BA-9186-956D04B452A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{32068EFF-7217-4EA6-9541-1CE1DD25A380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32068EFF-7217-4EA6-9541-1CE1DD25A380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32068EFF-7217-4EA6-9541-1CE1DD25A380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2C1505-F4DD-47BA-9186-956D04B452A3}.Debug|Any CPU.ActiveCfg = Debug
+		{BC2C1505-F4DD-47BA-9186-956D04B452A3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

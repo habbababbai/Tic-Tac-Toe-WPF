@@ -7,8 +7,17 @@ namespace TicTacToeLibrary
     /// </summary>
     public enum CellState
     {
+        /// <summary>
+        /// State of block is empty.
+        /// </summary>
         Empty,
+        /// <summary>
+        /// Block is occupied by X.
+        /// </summary>
         X,
+        /// <summary>
+        /// Block is occupied by O.
+        /// </summary>
         O
     }
     /// <summary>
@@ -16,7 +25,9 @@ namespace TicTacToeLibrary
     /// </summary>
     public class Board
     {
-
+        /// <summary>
+        /// Array which hold every block of the game.
+        /// </summary>
         public CellState[,] arr = new CellState[5,5];
         /// <summary>
         /// Constructor for Board class, sets every block to empty.

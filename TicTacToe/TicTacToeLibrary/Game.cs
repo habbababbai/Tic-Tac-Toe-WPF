@@ -4,7 +4,7 @@
 namespace TicTacToeLibrary
 {
     /// <summary>
-    /// Klasa Game zajmująca się logiką gry
+    /// Class maintaining game logic.
     /// </summary>
     public class Game
     {
@@ -38,6 +38,9 @@ namespace TicTacToeLibrary
         /// </summary>
         public int lastYCPU { get; set; }
 
+        /// <summary>
+        /// CPU add block on random position if cannot do otherwise.
+        /// </summary>
         public Random rnd = new Random();
 
         /// <summary>
@@ -94,7 +97,7 @@ namespace TicTacToeLibrary
         /// <summary>
         /// Method checks for vertical line.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Return true if there is a vertical line.</returns>
         public bool CheckVertical()
         {
             for (int i = 0; i < 5; i++)
@@ -111,7 +114,7 @@ namespace TicTacToeLibrary
         /// <summary>
         /// Method checks for horizontal line.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns true if there is horizontal line.</returns>
         public bool CheckHorizontal()
         {
             for (int i = 0; i < 5; i++)
@@ -128,7 +131,7 @@ namespace TicTacToeLibrary
         /// <summary>
         /// Method checks for diagonal line.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns true if there is diagonal line.</returns>
         public bool CheckDiagonal()
         {
             if (gameBoard.arr[2, 2] != CellState.Empty &&
@@ -148,7 +151,7 @@ namespace TicTacToeLibrary
         /// <summary>
         /// Method checks if every block is set as X or O.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Return true if all block are either X or O and none player won.</returns>
         public bool CheckDraw()
         {
             bool draw = true;
@@ -239,7 +242,10 @@ namespace TicTacToeLibrary
                 player1Turn = true;
             }
         }
-
+        /// <summary>
+        /// Check if CPU should block players horizontal line for win.
+        /// </summary>
+        /// <returns>Return true if CPU blocked player from winning.</returns>
         public bool SetBlockCPUHorizontal()
         {
 
@@ -448,7 +454,10 @@ namespace TicTacToeLibrary
             return false;
         }
 
-
+        /// <summary>
+        /// Checks if CPU should block players vertical winning line.
+        /// </summary>
+        /// <returns>Return true if blocked player from winning.</returns>
         public bool SetBlockCPUVertical()
         {
 
@@ -644,7 +653,10 @@ namespace TicTacToeLibrary
         }
 
 
-
+        /// <summary>
+        /// Checks if CPU should block players winning line.
+        /// </summary>
+        /// <returns>Return true if blocked player from winning</returns>
         public bool SetBlockCPUDiagonal()
         {
 
