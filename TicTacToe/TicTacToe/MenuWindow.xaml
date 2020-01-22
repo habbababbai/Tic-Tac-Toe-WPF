@@ -41,7 +41,7 @@
                 BorderBrush="MediumSlateBlue" 
                 BorderThickness="6,6,8,8"
                 materialDesign:ButtonAssist.CornerRadius="0,20,20,0"
-                ToolTip="MaterialDesignRaisedButton with Round Corners">
+                >
             <TextBlock
       Text="1 VS 1" />
         </Button>
@@ -59,7 +59,7 @@
                 BorderBrush="MediumSlateBlue" 
                 BorderThickness="6,6,8,8"
                 materialDesign:ButtonAssist.CornerRadius="0,20,20,0"
-                ToolTip="MaterialDesignRaisedButton with Round Corners">
+                >
             <TextBlock
       Text="1 VS Com." />
         </Button>
@@ -79,7 +79,7 @@
                 BorderBrush="MediumSlateBlue" 
                 BorderThickness="6,6,8,8"
                 materialDesign:ButtonAssist.CornerRadius="0,20,20,0"
-                ToolTip="MaterialDesignRaisedButton with Round Corners">
+                >
             <TextBlock
       Text="EXIT" />
         </Button>

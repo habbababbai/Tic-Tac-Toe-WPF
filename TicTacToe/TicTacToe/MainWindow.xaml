@@ -95,7 +95,7 @@
             Background="BlueViolet"
             BorderBrush="MediumPurple"
                 materialDesign:ButtonAssist.CornerRadius="20,2,12,2"
-                ToolTip="MaterialDesignRaisedAccentButton with Round Top Corners" Click="ReturnToMenu">
+                 Click="ReturnToMenu">
             <TextBlock
              Text="Menu" FontWeight="Medium" Foreground="AliceBlue" FontSize="18" />
         </Button>
