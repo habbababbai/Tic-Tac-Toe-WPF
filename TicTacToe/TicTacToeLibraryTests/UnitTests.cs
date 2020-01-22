@@ -2,7 +2,7 @@
 using TicTacToeLibrary;
 
 
-namespace TicTacToeTestt
+namespace TicTacToeLibraryTest
 {
     [TestClass]
     public class BoardTest
