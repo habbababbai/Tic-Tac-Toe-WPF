@@ -84,3 +84,32 @@ C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debu
 C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\PlayerVSCpu.baml
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\PlayerVSCpu.g.cs
 D:\Studia WSEI\Semestr 3 WSEI\C#\ProjektTicTac\Tic-Tac-Toe-WPF\TicTacToe\TicTacToe\obj\Debug\PlayerVSCpu.baml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\MaterialDesignColors.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\TicTacToeLibrary.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\MaterialDesignColors.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\MainWindow.g.cs
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\MenuWindow.g.cs
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\EndWindow.g.cs
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\PlayerVSCpu.g.cs
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\App.g.cs
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\App.baml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\MainWindow.baml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\MenuWindow.baml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\EndWindow.baml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\PlayerVSCpu.baml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.CopyComplete
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+D:\TiCtacToe Projekt\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb

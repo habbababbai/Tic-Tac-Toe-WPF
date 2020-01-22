@@ -32,3 +32,14 @@ C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\b
 C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\Admin.000\Documents\GitHub\Tic-Tac-Toe-WPF\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CopyComplete
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\bin\Debug\TicTacToeLibrary.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignColors.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csprojAssemblyReference.cache
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.csproj.CopyComplete
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.dll
+D:\TiCtacToe Projekt\TicTacToe\TicTacToeLibrary\obj\Debug\TicTacToeLibrary.pdb
