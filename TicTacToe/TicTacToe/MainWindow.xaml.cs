@@ -62,7 +62,13 @@ namespace TicTacToe
         }
         private void WriteScore()
         {
-            txtbox.Text = $"Gracz 1 : {newGame.p1Score}     Gracz 2 : {newGame.p2Score}";
+            txtbox2.Text = $"Gracz 1 : {newGame.p1Score}     Gracz 2 : {newGame.p2Score}";
+        }
+        private void ReturnToMenu(object sender, RoutedEventArgs e)
+        {
+            var menu = new MenuWindow();
+            menu.Show();
+            this.Close();
         }
     }
 }

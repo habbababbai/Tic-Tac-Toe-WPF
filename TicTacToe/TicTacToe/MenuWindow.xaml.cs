@@ -38,5 +38,12 @@ namespace TicTacToe
         {
             this.Close();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var PlayerVsCpu = new PlayerVSCpu();
+            PlayerVsCpu.Show();
+            this.Close();
+        }
     }
 }
