@@ -1,0 +1,345 @@
+\hypertarget{class_tic_tac_toe_library_1_1_game}{}\doxysection{Tic\+Tac\+Toe\+Library.\+Game Class Reference}
+\label{class_tic_tac_toe_library_1_1_game}\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+
+
+Class maintaining game logic.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_ac6ae2cfa650d0b3e3b6975a6a8fe4e14}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game}{Game}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a9575f47002a4f92fcb504ae0379402ef}{Set\+Block}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Method allowing to change specific block state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_aafe639c6b86919a4143ed26c88844ce6}{Check\+For\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Method checks for line of same blocks. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_aea36c6877ac27f61acc722dd4845d7c2}{Check\+Vertical}} ()
+\begin{DoxyCompactList}\small\item\em Method checks for vertical line. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a18cbaf2b6f7620d878702910b46f8015}{Check\+Horizontal}} ()
+\begin{DoxyCompactList}\small\item\em Method checks for horizontal line. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a305e7c5f45d7f819f75ee1197046d2f3}{Check\+Diagonal}} ()
+\begin{DoxyCompactList}\small\item\em Method checks for diagonal line. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a7a74370e1d284332db33190aeff7565a}{Check\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em Method checks if every block is set as X or O. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a26f249e3a913660f40e4f29ef9fd9c85}{End\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Method ends game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a39972ec3bceeebe7673cc28b3163e191}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Method resets game\+Board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a231a3763a597c41df620402261785d84}{Set\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Method sets scores for players. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a59d2e5e8b992d13735956a5ac77998c2}{Set\+Block\+C\+P\+U\+Random}} ()
+\begin{DoxyCompactList}\small\item\em If C\+PU cannot do otherwise it sets O on random place in game array \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_ab00bde372c0b30e599611b4bfa5a767a}{Set\+Block\+C\+PU}} ()
+\begin{DoxyCompactList}\small\item\em Method setting block by C\+PU. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a3e3854c75bb29962d2668443a771ff4e}{Set\+Block\+C\+P\+U\+Horizontal}} ()
+\begin{DoxyCompactList}\small\item\em Check if C\+PU should block players horizontal line for win. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_aacf96f64381edc2df424fe47c2a48216}{Set\+Block\+C\+P\+U\+Vertical}} ()
+\begin{DoxyCompactList}\small\item\em Checks if C\+PU should block players vertical winning line. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a9882ed7394feb1750dceb53bc7089c1b}{Set\+Block\+C\+P\+U\+Diagonal}} ()
+\begin{DoxyCompactList}\small\item\em Checks if C\+PU should block players winning line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Random \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_ae5eb528ba1432088058ba4c526dd0d50}{rnd}} = new Random()
+\begin{DoxyCompactList}\small\item\em C\+PU add block on random position if cannot do otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a5667a442c1100eef266075253a74ea36}{player1\+Turn}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em player1\+Turn checks which player turn it is. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tic_tac_toe_library_1_1_board}{Board}} \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a592258aacee5e637a1271ed1e486664c}{game\+Board}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em game\+Board is object that holds information of every game block. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_ae8b901c3112b1c7d72b84d0fd112cb0a}{is\+Over}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em is\+Over checks if game is over. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a4db1e444fcd292f64f6cf2da1a0671f4}{p1\+Score}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Score of player one. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a9a6ba26c8173b21527482460c2c3f4d0}{p2\+Score}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Score of player2 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a856613e49e1186cf7d2a372fb4310475}{last\+X\+C\+PU}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Last row on which cpu set its block. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game_a479224177da8561d2b4dee16f2bc0ab2}{last\+Y\+C\+PU}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Last column on which cpu set its block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class maintaining game logic. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_ac6ae2cfa650d0b3e3b6975a6a8fe4e14}\label{class_tic_tac_toe_library_1_1_game_ac6ae2cfa650d0b3e3b6975a6a8fe4e14}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!Game@{Game}}
+\index{Game@{Game}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Tic\+Tac\+Toe\+Library.\+Game.\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_tic_tac_toe_library_1_1_game}{Game}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a305e7c5f45d7f819f75ee1197046d2f3}\label{class_tic_tac_toe_library_1_1_game_a305e7c5f45d7f819f75ee1197046d2f3}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!CheckDiagonal@{CheckDiagonal}}
+\index{CheckDiagonal@{CheckDiagonal}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{CheckDiagonal()}{CheckDiagonal()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Check\+Diagonal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method checks for diagonal line. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if there is diagonal line.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a7a74370e1d284332db33190aeff7565a}\label{class_tic_tac_toe_library_1_1_game_a7a74370e1d284332db33190aeff7565a}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!CheckDraw@{CheckDraw}}
+\index{CheckDraw@{CheckDraw}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{CheckDraw()}{CheckDraw()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Check\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method checks if every block is set as X or O. 
+
+\begin{DoxyReturn}{Returns}
+Return true if all block are either X or O and none player won.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_aafe639c6b86919a4143ed26c88844ce6}\label{class_tic_tac_toe_library_1_1_game_aafe639c6b86919a4143ed26c88844ce6}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!CheckForLine@{CheckForLine}}
+\index{CheckForLine@{CheckForLine}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{CheckForLine()}{CheckForLine()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Check\+For\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method checks for line of same blocks. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a18cbaf2b6f7620d878702910b46f8015}\label{class_tic_tac_toe_library_1_1_game_a18cbaf2b6f7620d878702910b46f8015}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!CheckHorizontal@{CheckHorizontal}}
+\index{CheckHorizontal@{CheckHorizontal}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{CheckHorizontal()}{CheckHorizontal()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Check\+Horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method checks for horizontal line. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if there is horizontal line.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_aea36c6877ac27f61acc722dd4845d7c2}\label{class_tic_tac_toe_library_1_1_game_aea36c6877ac27f61acc722dd4845d7c2}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!CheckVertical@{CheckVertical}}
+\index{CheckVertical@{CheckVertical}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{CheckVertical()}{CheckVertical()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Check\+Vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method checks for vertical line. 
+
+\begin{DoxyReturn}{Returns}
+Return true if there is a vertical line.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a26f249e3a913660f40e4f29ef9fd9c85}\label{class_tic_tac_toe_library_1_1_game_a26f249e3a913660f40e4f29ef9fd9c85}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!EndGame@{EndGame}}
+\index{EndGame@{EndGame}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{EndGame()}{EndGame()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Library.\+Game.\+End\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method ends game. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a39972ec3bceeebe7673cc28b3163e191}\label{class_tic_tac_toe_library_1_1_game_a39972ec3bceeebe7673cc28b3163e191}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!Reset@{Reset}}
+\index{Reset@{Reset}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Library.\+Game.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method resets game\+Board. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a9575f47002a4f92fcb504ae0379402ef}\label{class_tic_tac_toe_library_1_1_game_a9575f47002a4f92fcb504ae0379402ef}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!SetBlock@{SetBlock}}
+\index{SetBlock@{SetBlock}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{SetBlock()}{SetBlock()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Library.\+Game.\+Set\+Block (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Method allowing to change specific block state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Row of block next to change.\\
+\hline
+{\em y} & Column of block next to change\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_ab00bde372c0b30e599611b4bfa5a767a}\label{class_tic_tac_toe_library_1_1_game_ab00bde372c0b30e599611b4bfa5a767a}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!SetBlockCPU@{SetBlockCPU}}
+\index{SetBlockCPU@{SetBlockCPU}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{SetBlockCPU()}{SetBlockCPU()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Library.\+Game.\+Set\+Block\+C\+PU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method setting block by C\+PU. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a9882ed7394feb1750dceb53bc7089c1b}\label{class_tic_tac_toe_library_1_1_game_a9882ed7394feb1750dceb53bc7089c1b}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!SetBlockCPUDiagonal@{SetBlockCPUDiagonal}}
+\index{SetBlockCPUDiagonal@{SetBlockCPUDiagonal}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{SetBlockCPUDiagonal()}{SetBlockCPUDiagonal()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Set\+Block\+C\+P\+U\+Diagonal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if C\+PU should block players winning line. 
+
+\begin{DoxyReturn}{Returns}
+Return true if blocked player from winning
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a3e3854c75bb29962d2668443a771ff4e}\label{class_tic_tac_toe_library_1_1_game_a3e3854c75bb29962d2668443a771ff4e}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!SetBlockCPUHorizontal@{SetBlockCPUHorizontal}}
+\index{SetBlockCPUHorizontal@{SetBlockCPUHorizontal}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{SetBlockCPUHorizontal()}{SetBlockCPUHorizontal()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Set\+Block\+C\+P\+U\+Horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if C\+PU should block players horizontal line for win. 
+
+\begin{DoxyReturn}{Returns}
+Return true if C\+PU blocked player from winning.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a59d2e5e8b992d13735956a5ac77998c2}\label{class_tic_tac_toe_library_1_1_game_a59d2e5e8b992d13735956a5ac77998c2}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!SetBlockCPURandom@{SetBlockCPURandom}}
+\index{SetBlockCPURandom@{SetBlockCPURandom}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{SetBlockCPURandom()}{SetBlockCPURandom()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Library.\+Game.\+Set\+Block\+C\+P\+U\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If C\+PU cannot do otherwise it sets O on random place in game array 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_aacf96f64381edc2df424fe47c2a48216}\label{class_tic_tac_toe_library_1_1_game_aacf96f64381edc2df424fe47c2a48216}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!SetBlockCPUVertical@{SetBlockCPUVertical}}
+\index{SetBlockCPUVertical@{SetBlockCPUVertical}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{SetBlockCPUVertical()}{SetBlockCPUVertical()}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+Set\+Block\+C\+P\+U\+Vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if C\+PU should block players vertical winning line. 
+
+\begin{DoxyReturn}{Returns}
+Return true if blocked player from winning.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a231a3763a597c41df620402261785d84}\label{class_tic_tac_toe_library_1_1_game_a231a3763a597c41df620402261785d84}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!SetScore@{SetScore}}
+\index{SetScore@{SetScore}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Library.\+Game.\+Set\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method sets scores for players. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_ae5eb528ba1432088058ba4c526dd0d50}\label{class_tic_tac_toe_library_1_1_game_ae5eb528ba1432088058ba4c526dd0d50}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!rnd@{rnd}}
+\index{rnd@{rnd}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{rnd}{rnd}}
+{\footnotesize\ttfamily Random Tic\+Tac\+Toe\+Library.\+Game.\+rnd = new Random()}
+
+
+
+C\+PU add block on random position if cannot do otherwise. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a592258aacee5e637a1271ed1e486664c}\label{class_tic_tac_toe_library_1_1_game_a592258aacee5e637a1271ed1e486664c}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!gameBoard@{gameBoard}}
+\index{gameBoard@{gameBoard}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{gameBoard}{gameBoard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tic_tac_toe_library_1_1_board}{Board}} Tic\+Tac\+Toe\+Library.\+Game.\+game\+Board\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+game\+Board is object that holds information of every game block. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_ae8b901c3112b1c7d72b84d0fd112cb0a}\label{class_tic_tac_toe_library_1_1_game_ae8b901c3112b1c7d72b84d0fd112cb0a}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!isOver@{isOver}}
+\index{isOver@{isOver}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{isOver}{isOver}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+is\+Over\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+is\+Over checks if game is over. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a856613e49e1186cf7d2a372fb4310475}\label{class_tic_tac_toe_library_1_1_game_a856613e49e1186cf7d2a372fb4310475}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!lastXCPU@{lastXCPU}}
+\index{lastXCPU@{lastXCPU}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{lastXCPU}{lastXCPU}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Library.\+Game.\+last\+X\+C\+PU\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Last row on which cpu set its block. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a479224177da8561d2b4dee16f2bc0ab2}\label{class_tic_tac_toe_library_1_1_game_a479224177da8561d2b4dee16f2bc0ab2}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!lastYCPU@{lastYCPU}}
+\index{lastYCPU@{lastYCPU}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{lastYCPU}{lastYCPU}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Library.\+Game.\+last\+Y\+C\+PU\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Last column on which cpu set its block. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a4db1e444fcd292f64f6cf2da1a0671f4}\label{class_tic_tac_toe_library_1_1_game_a4db1e444fcd292f64f6cf2da1a0671f4}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!p1Score@{p1Score}}
+\index{p1Score@{p1Score}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{p1Score}{p1Score}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Library.\+Game.\+p1\+Score\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Score of player one. 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a9a6ba26c8173b21527482460c2c3f4d0}\label{class_tic_tac_toe_library_1_1_game_a9a6ba26c8173b21527482460c2c3f4d0}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!p2Score@{p2Score}}
+\index{p2Score@{p2Score}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{p2Score}{p2Score}}
+{\footnotesize\ttfamily int Tic\+Tac\+Toe\+Library.\+Game.\+p2\+Score\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Score of player2 
+
+\mbox{\Hypertarget{class_tic_tac_toe_library_1_1_game_a5667a442c1100eef266075253a74ea36}\label{class_tic_tac_toe_library_1_1_game_a5667a442c1100eef266075253a74ea36}} 
+\index{TicTacToeLibrary.Game@{TicTacToeLibrary.Game}!player1Turn@{player1Turn}}
+\index{player1Turn@{player1Turn}!TicTacToeLibrary.Game@{TicTacToeLibrary.Game}}
+\doxysubsubsection{\texorpdfstring{player1Turn}{player1Turn}}
+{\footnotesize\ttfamily bool Tic\+Tac\+Toe\+Library.\+Game.\+player1\+Turn\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+player1\+Turn checks which player turn it is. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Admin.\+000/\+Documents/\+Git\+Hub/\+Tic-\/\+Tac-\/\+Toe-\/\+W\+P\+F/\+Tic\+Tac\+Toe/\+Tic\+Tac\+Toe\+Library/Game.\+cs\end{DoxyCompactItemize}
