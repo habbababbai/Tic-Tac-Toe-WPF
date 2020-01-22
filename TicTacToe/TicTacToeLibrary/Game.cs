@@ -87,17 +87,6 @@ namespace TicTacToeLibrary
                     player1Turn = !player1Turn;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
         /// <summary>
         /// Method checks for line of same blocks.
         /// </summary>
@@ -222,43 +211,6 @@ namespace TicTacToeLibrary
         /// </summary>
         public void SetBlockCPU()
             {
-
-
-
-
-            if (!player1Turn)
-                {
-
-
-
-                int x = rnd.Next(0, 5);
-                int y = rnd.Next(0, 5);
-                if (gameBoard.arr[x, y] == CellState.Empty)
-                    {
-
-                    gameBoard.arr[x, y] = CellState.O;
-                    lastXCPU = x;
-                    lastYCPU = y;
-                    if (CheckDraw())
-                        EndGame();
-                    if (CheckForLine())
-                        {
-                        EndGame();
-                        SetScore();
-                        }
-                    }
-                else
-                    {
-
-                    SetBlockCPU();
-                    }
-                }
-            player1Turn = true;
-
-
-
-
-
 
             //sprawdzenie czy gracz nie wygra w następnej rundzie oraz blokada gracza zeby nie wygrał
             if (gameBoard.arr[0, 0] == CellState.Empty &&  // (0,0) sprawdzenie czy za 1 runde gracz nie wygra
@@ -710,7 +662,36 @@ namespace TicTacToeLibrary
                     lastXCPU = 4;
                     lastYCPU = 0;
                  }
+            else
+            {
+                SetBlockCPURandom();
+            }
+            player1Turn = true;
 
+        }
+        private void SetBlockCPURandom()
+        {
+            int x = rnd.Next(0, 5);
+            int y = rnd.Next(0, 5);
+            if (gameBoard.arr[x, y] == CellState.Empty)
+            {
+
+                gameBoard.arr[x, y] = CellState.O;
+                lastXCPU = x;
+                lastYCPU = y;
+                if (CheckDraw())
+                    EndGame();
+                if (CheckForLine())
+                {
+                    EndGame();
+                    SetScore();
+                }
+            }
+            else
+            {
+
+                SetBlockCPURandom();
+            }
         }
     }
 }

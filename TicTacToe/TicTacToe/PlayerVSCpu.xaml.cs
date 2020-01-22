@@ -35,7 +35,7 @@ namespace TicTacToe
                                     {b4_0, b4_1, b4_2, b4_3, b4_4 } };
             
         }
-        
+                
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (!newGame.isOver)
@@ -43,13 +43,16 @@ namespace TicTacToe
                 var button = (Button)sender;
                 var column = Grid.GetColumn(button);
                 var row = Grid.GetRow(button);
+
                 newGame.SetBlock(row, column);
                 if (newGame.gameBoard.arr[row,column] == CellState.X)
                     button.Content = "X";
+                
                 if (!newGame.isOver)
                 {
                     newGame.SetBlockCPU();
                     btnList[newGame.lastXCPU, newGame.lastYCPU].Content = "O";
+                  
                 }
                 WriteScore();
             }
